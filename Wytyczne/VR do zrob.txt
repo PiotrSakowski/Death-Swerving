@@ -1,0 +1,12 @@
+scriptable object (dialogi)
+physical raycast (podnoszenie)
+screenpoint to ray (podnoszenie)
+
+Nastepne zajecia:
+Stworz repozytorium
+nav mesch agent
+chodzenie
+UI
+
+Kolejne zajecia:
+podnoszenie i uzywanie przedmiotow

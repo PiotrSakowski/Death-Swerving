@@ -1,0 +1,44 @@
+mkdir PierwszeRepo
+cd PierwszeRepo
+
+git init
+explorer . (otwarcie folderu z gitem)
+git status
+git add plik1.txt
+git config --global user.name "John Doe"
+git config --global user.email johndoe@example.com
+git commit -m "wersja 0.0.1"
+git log
+git checkout SPOPIOWANYZLOGNUMERWERSJI
+git add plik2.txt
+git add -A
+git checkout master
+git log --oneline
+git log -3
+
+git clone LINKDOREPOZYTORIUM
+cd Animacja
+git checkout -b NAZWANOWEGOBRANCHU (tworzy branch)
+git push origin NAZWANOWEGOBRANCHU (przesyla na repo branch/wypycha na serwer)
+git fetch (pobiera zmiany)
+git merge origin/NAZWACZYJEGOSBRANCHU
+:q ENTER
+git push origin NAZWANOWEGOBRANCHU
+
+ADD > COMMIT > PUSH
+
+ROZWIAZANIE KONFLIKTU:
+git checkout --theirs plik.txt (akceptuje wersje czyjas)
+git checkout --ours plik.txt (akceptuje wersje moja)
+git commit -m "MERGEBEZKONFLIKTU"
+
+PLIK .gitignore definiuje których plików nie przesy³aæ (np *.blend1)
+
+git remote add origin LINKDOREPOZYTORIUM
+git fetch
+git checkout NAZWABRANCHU
+git add -A
+git commit -m "wersja 0.0.1"
+git push origin NAZWABRANCHU
+
+FETCH > MERGE
