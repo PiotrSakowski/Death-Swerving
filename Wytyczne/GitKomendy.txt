@@ -42,3 +42,5 @@ git commit -m "wersja 0.0.1"
 git push origin NAZWABRANCHU
 
 FETCH > MERGE
+
+git push origin main
