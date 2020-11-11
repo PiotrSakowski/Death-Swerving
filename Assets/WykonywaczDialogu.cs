@@ -13,10 +13,6 @@ public class WykonywaczDialogu : MonoBehaviour
     public Image ObrazekPostaci;
     public Image ObrazekDucha;
 
-    //public static Text TekstDialoguX;
-    //public static Image ObrazekPostaciX;
-    //public static Image ObrazekDuchaX;
-
     public int PozycjaDialogu;
 
     public Dialog dialogPodgladowy;
@@ -37,35 +33,21 @@ public class WykonywaczDialogu : MonoBehaviour
     private void Update()
     {
         dialogPodgladowy = dialog;
-        //TekstDialogu = TekstDialoguX;
-        //ObrazekPostaci = ObrazekPostaciX;
-       // ObrazekDucha = ObrazekDuchaX;
-
+      
         if (PozycjaDialogu >= dialog.TekstDialogu.Length)
         {
-            //Destroy(gameObject);
-            //dialog = null;
             PanelDialogowy.SetActive(false);
             Debug.Log("Koniec dialogu");
             PozycjaDialogu = 0;
-
-           // TekstDialogu.text = null;
-            //ObrazekPostaci.sprite = null;
-           // ObrazekDucha.sprite = null;
-
+          
         }
 
-        if (Input.GetKeyDown(KeyCode.E) )//&& (PanelDialogowy.active))
+        if (Input.GetKeyDown(KeyCode.E) )
         {
-            
-
             if (PozycjaDialogu < dialog.TekstDialogu.Length)
             {
                 PozycjaDialogu = PozycjaDialogu + 1;
             }
-            
-
-
         }
 
         TekstDialogu.text = dialog.TekstDialogu[PozycjaDialogu];
