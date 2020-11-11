@@ -5,19 +5,20 @@ using UnityEngine;
 public class AktywatorDialogu : MonoBehaviour
 {
     public GameObject PanelDialogowy;
+
     public bool UruchamiaColider;
     public GameObject ColiderUruchamiajacy;
-    public bool UruchamiaZebranie;
-    public bool UruchamiaInterakcja;
 
     public Dialog dialogColidera;
 
 
     void Start()
     {
+
         PanelDialogowy.SetActive(false);
     }
-    
+
+
 
     void OnCollisionEnter(Collision collision)
     {

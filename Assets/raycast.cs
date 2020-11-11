@@ -16,7 +16,7 @@ public class raycast : MonoBehaviour
 
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
 
-        if (Physics.Raycast(ray, out hit, 50f))
+        if (Physics.Raycast(ray, out hit, 10f))
         {
             Debug.DrawRay(ray.origin, ray.direction, Color.red, 5f, true);
             if (hit.collider.gameObject == Klucz)
@@ -27,7 +27,7 @@ public class raycast : MonoBehaviour
                 K_Animator.SetTrigger("klucztrigger");
                 Celownik.sprite = Grab;
 
-                if (Input.GetKeyDown(KeyCode.E))
+                if (Input.GetMouseButton(0))
                 {
                     Debug.Log("Klucz_zebrany");
                     Destroy(hit.collider.gameObject);
@@ -36,7 +36,7 @@ public class raycast : MonoBehaviour
             }
             else
             {
-                Celownik.sprite = Aim;
+                //Celownik.sprite = Aim;
                 //     Animator K_Animator;
                 //     K_Animator = Klucz.GetComponent<Animator>();
                 //     K_Animator.SetBool("kluczanim", false);
