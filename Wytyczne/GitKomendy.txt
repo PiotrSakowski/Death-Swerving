@@ -44,3 +44,13 @@ git push origin NAZWABRANCHU
 FETCH > MERGE
 
 git push origin main
+
+Resolving merge conflicts:
+cd project-folder (Change working directory to project folder.)
+grep -lr '<<<<<<<' . (Search for all conflicting files.)
+
+git checkout --ours PATH/FILE
+git checkout --theirs PATH/FILE
+
+grep -lr '<<<<<<<' . | xargs git checkout --ours
+grep -lr '<<<<<<<' . | xargs git checkout --theirs
