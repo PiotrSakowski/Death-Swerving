@@ -32,14 +32,17 @@ public class AktywatorDialogu : MonoBehaviour
     {
         if ((collision.gameObject == ColiderUruchamiajacy) && (UruchamiaColider == true))
         {
+
+            //WykonywaczDialogu.PozycjaDialogu = 1;
             //WykonywaczDialogu.dialog = null;
             WykonywaczDialogu.dialog = dialogColidera;
-            PanelDialogowy.SetActive(true);
             
+            PanelDialogowy.SetActive(true);
 
-           // WykonywaczDialogu.TekstDialogu.text = dialogColidera.TekstDialogu[WykonywaczDialogu.PozycjaDialogu];
-            //WykonywaczDialogu.ObrazekPostaci.sprite = dialogColidera.ObrazekPostaci[WykonywaczDialogu.PozycjaDialogu];
-           // WykonywaczDialogu.ObrazekDucha.sprite = dialogColidera.ObrazekDucha[WykonywaczDialogu.PozycjaDialogu];
+            //WykonywaczDialogu.TekstDialoguX.text = dialogColidera.TekstDialogu[0];
+            //WykonywaczDialogu.ObrazekPostaciX.sprite = dialogColidera.ObrazekPostaci[0];
+            //WykonywaczDialogu.ObrazekDuchaX.sprite = dialogColidera.ObrazekDucha[0];
+
 
         }
     }
