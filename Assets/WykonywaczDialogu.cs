@@ -7,7 +7,7 @@ public class WykonywaczDialogu : MonoBehaviour
 {
     public static Dialog dialog;
 
-    public GameObject PanelDialogowy;
+    public GameObject PanelDialogowy, PanelP, PanelL, Celownik;
 
     public Text TekstDialogu;
     public Image ObrazekPostaci;
@@ -27,8 +27,10 @@ public class WykonywaczDialogu : MonoBehaviour
         TekstDialogu.text = dialog.TekstDialogu[PozycjaDialogu];
         ObrazekPostaci.sprite = dialog.ObrazekPostaci[PozycjaDialogu];
         ObrazekDucha.sprite = dialog.ObrazekDucha[PozycjaDialogu];
+        
 
     }
+
 
     private void Update()
     {
@@ -39,7 +41,10 @@ public class WykonywaczDialogu : MonoBehaviour
             PanelDialogowy.SetActive(false);
             Debug.Log("Koniec dialogu");
             PozycjaDialogu = 0;
-          
+            PanelP.SetActive(true); 
+            PanelL.SetActive(true);
+            Celownik.SetActive(true);
+
         }
 
         if (Input.GetKeyDown(KeyCode.E) )
@@ -48,6 +53,13 @@ public class WykonywaczDialogu : MonoBehaviour
             {
                 PozycjaDialogu = PozycjaDialogu + 1;
             }
+        }
+
+        if (PanelDialogowy.activeInHierarchy)
+        {
+            PanelP.SetActive(false);
+            PanelL.SetActive(false);
+            Celownik.SetActive(false);
         }
 
         TekstDialogu.text = dialog.TekstDialogu[PozycjaDialogu];
