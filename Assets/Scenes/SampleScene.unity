@@ -733,8 +733,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 116e79163c918bc458b94ff122a0c52b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thrustW: 10
+  thrustW: 5
   rb: {fileID: 0}
+  maxZmianaPredkosci: 10
 --- !u!114 &241323678
 MonoBehaviour:
   m_ObjectHideFlags: 0
