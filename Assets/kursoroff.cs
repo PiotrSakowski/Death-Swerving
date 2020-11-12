@@ -12,8 +12,8 @@ public class kursoroff : MonoBehaviour
     private void Update()
     {
         if (Input.GetKey(KeyCode.Escape))
-            Screen.lockCursor = false;
+            Cursor.lockState = CursorLockMode.None;
         else
-            Screen.lockCursor = true;
+            Cursor.lockState = CursorLockMode.Locked;
     }
 }

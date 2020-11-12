@@ -1,11 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class raycast : MonoBehaviour
 {
-    public GameObject Klucz;
-    public GameObject KluczUI;
+    public GameObject Klucz, KluczUI;
+    public Image Celownik;
+    public Sprite Aim, Grab;
+
 
     void Update()
     {
@@ -13,7 +16,7 @@ public class raycast : MonoBehaviour
 
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
 
-        if (Physics.Raycast(ray, out hit, 50f))
+        if (Physics.Raycast(ray, out hit, 10f))
         {
             Debug.DrawRay(ray.origin, ray.direction, Color.red, 5f, true);
             if (hit.collider.gameObject == Klucz)
@@ -22,20 +25,22 @@ public class raycast : MonoBehaviour
                 Animator K_Animator;
                 K_Animator = Klucz.GetComponent<Animator>();
                 K_Animator.SetTrigger("klucztrigger");
+                Celownik.sprite = Grab;
 
-                if (Input.GetKeyDown(KeyCode.E))
+                if (Input.GetMouseButton(0))
                 {
                     Debug.Log("Klucz_zebrany");
                     Destroy(hit.collider.gameObject);
                     KluczUI.SetActive(true);
                 }
             }
-           // else
-           // {
-           //     Animator K_Animator;
-           //     K_Animator = Klucz.GetComponent<Animator>();
-           //     K_Animator.SetBool("kluczanim", false);
-           // }
+            else
+            {
+                //Celownik.sprite = Aim;
+                //     Animator K_Animator;
+                //     K_Animator = Klucz.GetComponent<Animator>();
+                //     K_Animator.SetBool("kluczanim", false);
+            }
 
         }
     }
