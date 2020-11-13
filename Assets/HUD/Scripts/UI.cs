@@ -9,9 +9,6 @@ public class UI : MonoBehaviour
     public Sprite Aim, AimGrab;
     public Image Cel;
 
-    //demo/////////////////////////////
-    public bool grab;
-    /////////////////////////////
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Tab))
@@ -24,20 +21,5 @@ public class UI : MonoBehaviour
                 UiAnim.SetBool("Hidden", true);
             }
         }
-
-        //demo/////////////////////////////
-        if (Input.GetKeyDown(KeyCode.G))
-        {
-            if (grab == true)
-            {
-                grab = false;
-                Cel.sprite = Aim;
-            } else
-            {
-                grab = true;
-                Cel.sprite = AimGrab;
-            }
-        }
-        /////////////////////////////
     }
 }

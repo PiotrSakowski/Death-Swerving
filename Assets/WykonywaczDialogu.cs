@@ -9,6 +9,11 @@ public class WykonywaczDialogu : MonoBehaviour
 
     public GameObject PanelDialogowy, PanelP, PanelL, Celownik;
 
+    public GameObject Player;
+    private Poruszanie Move;
+    private MouseLook LookP;
+    public MouseLook LookC;
+
     public Text TekstDialogu;
     public Image ObrazekPostaci;
     public Image ObrazekDucha;
@@ -27,7 +32,9 @@ public class WykonywaczDialogu : MonoBehaviour
         TekstDialogu.text = dialog.TekstDialogu[PozycjaDialogu];
         ObrazekPostaci.sprite = dialog.ObrazekPostaci[PozycjaDialogu];
         ObrazekDucha.sprite = dialog.ObrazekDucha[PozycjaDialogu];
-        
+
+        Move = Player.GetComponent<Poruszanie>();
+        LookP = Player.GetComponent<MouseLook>();
 
     }
 
@@ -44,6 +51,9 @@ public class WykonywaczDialogu : MonoBehaviour
             PanelP.SetActive(true); 
             PanelL.SetActive(true);
             Celownik.SetActive(true);
+            Move.enabled = true;
+            LookP.enabled = true;
+            LookC.enabled = true;
 
         }
 
@@ -51,7 +61,7 @@ public class WykonywaczDialogu : MonoBehaviour
         {
             if (PozycjaDialogu < dialog.TekstDialogu.Length)
             {
-                PozycjaDialogu = PozycjaDialogu + 1;
+                PozycjaDialogu ++;
             }
         }
 
@@ -60,6 +70,9 @@ public class WykonywaczDialogu : MonoBehaviour
             PanelP.SetActive(false);
             PanelL.SetActive(false);
             Celownik.SetActive(false);
+            Move.enabled = false;
+            LookP.enabled = false;
+            LookC.enabled = false;
         }
 
         TekstDialogu.text = dialog.TekstDialogu[PozycjaDialogu];

@@ -1,13 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class raycast : MonoBehaviour
 {
-    public GameObject Klucz, KluczUI;
+    public GameObject Klucz, KluczUI, PanelDialogowy;
     public Image Celownik;
-    public Sprite Aim, Grab;
+    public Sprite Aim, Grab, Talk;
 
 
     void Update()
@@ -40,6 +41,20 @@ public class raycast : MonoBehaviour
                 //     Animator K_Animator;
                 //     K_Animator = Klucz.GetComponent<Animator>();
                 //     K_Animator.SetBool("kluczanim", false);
+            }
+
+            if (hit.collider.gameObject.tag == "NPC")
+            {
+                GameObject Npc = hit.collider.gameObject;
+                DialogNPC dialog = Npc.GetComponent<DialogNPC>();
+                Celownik.sprite = Talk;
+
+                if (Input.GetMouseButtonDown(0))
+                {
+                    WykonywaczDialogu.dialog = dialog.DialogPostaci;
+                    PanelDialogowy.SetActive(true);
+                }
+
             }
 
         }
