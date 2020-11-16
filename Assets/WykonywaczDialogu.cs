@@ -7,7 +7,12 @@ public class WykonywaczDialogu : MonoBehaviour
 {
     public static Dialog dialog;
 
-    public GameObject PanelDialogowy;
+    public GameObject PanelDialogowy, PanelP, PanelL, Celownik;
+
+    public GameObject Player;
+    private Poruszanie Move;
+    private MouseLook LookP;
+    public MouseLook LookC;
 
     public Text TekstDialogu;
     public Image ObrazekPostaci;
@@ -28,7 +33,11 @@ public class WykonywaczDialogu : MonoBehaviour
         ObrazekPostaci.sprite = dialog.ObrazekPostaci[PozycjaDialogu];
         ObrazekDucha.sprite = dialog.ObrazekDucha[PozycjaDialogu];
 
+        Move = Player.GetComponent<Poruszanie>();
+        LookP = Player.GetComponent<MouseLook>();
+
     }
+
 
     private void Update()
     {
@@ -39,15 +48,31 @@ public class WykonywaczDialogu : MonoBehaviour
             PanelDialogowy.SetActive(false);
             Debug.Log("Koniec dialogu");
             PozycjaDialogu = 0;
-          
+            PanelP.SetActive(true); 
+            PanelL.SetActive(true);
+            Celownik.SetActive(true);
+            Move.enabled = true;
+            LookP.enabled = true;
+            LookC.enabled = true;
+
         }
 
         if (Input.GetKeyDown(KeyCode.E) )
         {
             if (PozycjaDialogu < dialog.TekstDialogu.Length)
             {
-                PozycjaDialogu = PozycjaDialogu + 1;
+                PozycjaDialogu ++;
             }
+        }
+
+        if (PanelDialogowy.activeInHierarchy)
+        {
+            PanelP.SetActive(false);
+            PanelL.SetActive(false);
+            Celownik.SetActive(false);
+            Move.enabled = false;
+            LookP.enabled = false;
+            LookC.enabled = false;
         }
 
         TekstDialogu.text = dialog.TekstDialogu[PozycjaDialogu];
