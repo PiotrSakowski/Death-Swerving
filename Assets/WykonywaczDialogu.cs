@@ -29,9 +29,9 @@ public class WykonywaczDialogu : MonoBehaviour
         ObrazekPostaci.sprite = null;
         ObrazekDucha.sprite = null;
         PozycjaDialogu = 0;
-        TekstDialogu.text = dialog.TekstDialogu[PozycjaDialogu];
-        ObrazekPostaci.sprite = dialog.ObrazekPostaci[PozycjaDialogu];
-        ObrazekDucha.sprite = dialog.ObrazekDucha[PozycjaDialogu];
+        //TekstDialogu.text = dialog.TekstDialogu[PozycjaDialogu];
+        //ObrazekPostaci.sprite = dialog.ObrazekPostaci[PozycjaDialogu];
+        //ObrazekDucha.sprite = dialog.ObrazekDucha[PozycjaDialogu];
 
         Move = Player.GetComponent<Poruszanie>();
         LookP = Player.GetComponent<MouseLook>();
@@ -41,43 +41,45 @@ public class WykonywaczDialogu : MonoBehaviour
 
     private void Update()
     {
-        dialogPodgladowy = dialog;
-      
-        if (PozycjaDialogu >= dialog.TekstDialogu.Length)
-        {
-            PanelDialogowy.SetActive(false);
-            Debug.Log("Koniec dialogu");
-            PozycjaDialogu = 0;
-            PanelP.SetActive(true); 
-            PanelL.SetActive(true);
-            Celownik.SetActive(true);
-            Move.enabled = true;
-            LookP.enabled = true;
-            LookC.enabled = true;
+        //dialogPodgladowy = dialog;
 
-        }
+        ObrazekDucha.sprite = GhostSpriteLoader.Instance.GetSprit(DialogPanel.GhostEmotions.angry);
 
-        if (Input.GetKeyDown(KeyCode.E) )
-        {
-            if (PozycjaDialogu < dialog.TekstDialogu.Length)
-            {
-                PozycjaDialogu ++;
-            }
-        }
+        //if (PozycjaDialogu >= dialog.TekstDialogu.Length)
+        //{
+        //    PanelDialogowy.SetActive(false);
+        //    Debug.Log("Koniec dialogu");
+        //    PozycjaDialogu = 0;
+        //    PanelP.SetActive(true); 
+        //    PanelL.SetActive(true);
+        //    Celownik.SetActive(true);
+        //    Move.enabled = true;
+        //    LookP.enabled = true;
+        //    LookC.enabled = true;
 
-        if (PanelDialogowy.activeInHierarchy)
-        {
-            PanelP.SetActive(false);
-            PanelL.SetActive(false);
-            Celownik.SetActive(false);
-            Move.enabled = false;
-            LookP.enabled = false;
-            LookC.enabled = false;
-        }
+        //}
 
-        TekstDialogu.text = dialog.TekstDialogu[PozycjaDialogu];
-        ObrazekPostaci.sprite = dialog.ObrazekPostaci[PozycjaDialogu];
-        ObrazekDucha.sprite = dialog.ObrazekDucha[PozycjaDialogu];
+        //if (Input.GetKeyDown(KeyCode.E) )
+        //{
+        //    if (PozycjaDialogu < dialog.TekstDialogu.Length)
+        //    {
+        //        PozycjaDialogu ++;
+        //    }
+        //}
+
+        //if (PanelDialogowy.activeInHierarchy)
+        //{
+        //    PanelP.SetActive(false);
+        //    PanelL.SetActive(false);
+        //    Celownik.SetActive(false);
+        //    Move.enabled = false;
+        //    LookP.enabled = false;
+        //    LookC.enabled = false;
+        //}
+
+        //TekstDialogu.text = dialog.TekstDialogu[PozycjaDialogu];
+        //ObrazekPostaci.sprite = dialog.ObrazekPostaci[PozycjaDialogu];
+        //ObrazekDucha.sprite = dialog.ObrazekDucha[PozycjaDialogu];
 
     }
 
