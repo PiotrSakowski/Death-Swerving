@@ -25,7 +25,7 @@ public class łapka : MonoBehaviour
             }
             else
             {
-                Celownik.sprite = Aim;
+                //Celownik.sprite = Aim;
             }
 
         }
