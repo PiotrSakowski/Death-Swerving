@@ -320,6 +320,7 @@ GameObject:
   - component: {fileID: 197890519}
   - component: {fileID: 197890521}
   - component: {fileID: 197890520}
+  - component: {fileID: 197890522}
   m_Layer: 5
   m_Name: Panel_Dialogowy1
   m_TagString: Untagged
@@ -387,6 +388,29 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 197890518}
   m_CullTransparentMesh: 0
+--- !u!114 &197890522
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 197890518}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7d04a1dbba428142bb11f1e10b07f25, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PanelDialogowy: {fileID: 197890518}
+  PanelP: {fileID: 3555762133076294402}
+  PanelL: {fileID: 5639149828701078387}
+  Celownik: {fileID: 7487862988322573072}
+  Player: {fileID: 241323671}
+  LookC: {fileID: 963194229}
+  TekstDialogu: {fileID: 738004780}
+  ObrazekPostaci: {fileID: 1965693790}
+  ObrazekDucha: {fileID: 548690174}
+  PozycjaDialogu: 0
+  dialogPodgladowy: {fileID: 0}
 --- !u!1 &212559298
 GameObject:
   m_ObjectHideFlags: 0
@@ -1626,7 +1650,7 @@ MonoBehaviour:
   Celownik: {fileID: 4520425006656958566}
   Aim: {fileID: 21300000, guid: fae817da6ad50d44d85d9f1e7cd5c5e2, type: 3}
   Grab: {fileID: 21300000, guid: 2ddd0bdc420544f4e91a470aaaabdc12, type: 3}
-  Talk: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
+  Talk: {fileID: 21300000, guid: 95ea87c40328fd64392ce8ab6be5a294, type: 3}
 --- !u!114 &963194231
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2891,7 +2915,7 @@ MonoBehaviour:
       m_Calls: []
   m_Sprite: {fileID: 21300000, guid: fae817da6ad50d44d85d9f1e7cd5c5e2, type: 3}
   m_Type: 0
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -3087,7 +3111,6 @@ GameObject:
   - component: {fileID: 7879592514737138316}
   - component: {fileID: 5639149827688333666}
   - component: {fileID: 5639149827688333665}
-  - component: {fileID: 5639149827688333667}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -3127,29 +3150,6 @@ MonoBehaviour:
   Celownik: {fileID: 4520425006656958566}
   Aim: {fileID: 21300000, guid: fae817da6ad50d44d85d9f1e7cd5c5e2, type: 3}
   Grab: {fileID: 21300000, guid: 2ddd0bdc420544f4e91a470aaaabdc12, type: 3}
---- !u!114 &5639149827688333667
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5639149827688333664}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f7d04a1dbba428142bb11f1e10b07f25, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PanelDialogowy: {fileID: 197890518}
-  PanelP: {fileID: 3555762133076294402}
-  PanelL: {fileID: 5639149828701078387}
-  Celownik: {fileID: 7487862988322573072}
-  Player: {fileID: 241323671}
-  LookC: {fileID: 963194229}
-  TekstDialogu: {fileID: 738004780}
-  ObrazekPostaci: {fileID: 1965693790}
-  ObrazekDucha: {fileID: 548690174}
-  PozycjaDialogu: 0
-  dialogPodgladowy: {fileID: 0}
 --- !u!4 &5639149827688333669
 Transform:
   m_ObjectHideFlags: 0
