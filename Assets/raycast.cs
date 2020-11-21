@@ -35,15 +35,9 @@ public class raycast : MonoBehaviour
                     KluczUI.SetActive(true);
                 }
             }
-            else
-            {
-                //Celownik.sprite = Aim;
-                //     Animator K_Animator;
-                //     K_Animator = Klucz.GetComponent<Animator>();
-                //     K_Animator.SetBool("kluczanim", false);
-            }
+           
 
-            if (hit.collider.gameObject.tag == "NPC")
+            if (hit.collider.gameObject.CompareTag("NPC"))
             {
                 GameObject Npc = hit.collider.gameObject;
                 DialogNPC dialog = Npc.GetComponent<DialogNPC>();
