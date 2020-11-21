@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Dialog 2
   m_EditorClassIdentifier: 
   TekstDialogu:
-  - lalalal
+  - Wow zebrales klucz!
   ObrazekPostaci:
   - {fileID: 21300000, guid: c663582db513fd243b008e2941daa474, type: 3}
   ObrazekDucha:

@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TekstDialogu:
   - Dialog z NPC
-  - panel 2
+  - "Jestem Enpecetem i m\xF3wie ci o tym!"
   ObrazekPostaci:
   - {fileID: 21300000, guid: c26979fad11f05e45b804e5be794631d, type: 3}
   - {fileID: 21300000, guid: c5f621f70733f574e8993df1d8cd1aaa, type: 3}
