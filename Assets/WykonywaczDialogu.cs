@@ -25,13 +25,7 @@ public class WykonywaczDialogu : MonoBehaviour
 
     void Start()
     {
-        TekstDialogu.text = null;
-        ObrazekPostaci.sprite = null;
-        ObrazekDucha.sprite = null;
         PozycjaDialogu = 0;
-        TekstDialogu.text = dialog.TekstDialogu[PozycjaDialogu];
-        ObrazekPostaci.sprite = dialog.ObrazekPostaci[PozycjaDialogu];
-        ObrazekDucha.sprite = dialog.ObrazekDucha[PozycjaDialogu];
 
         Move = Player.GetComponent<Poruszanie>();
         LookP = Player.GetComponent<MouseLook>();
@@ -42,8 +36,8 @@ public class WykonywaczDialogu : MonoBehaviour
     private void Update()
     {
         dialogPodgladowy = dialog;
-      
-        if (PozycjaDialogu >= dialog.TekstDialogu.Length)
+
+        if (PozycjaDialogu >= dialog.panels.Length)
         {
             PanelDialogowy.SetActive(false);
             Debug.Log("Koniec dialogu");
@@ -59,11 +53,15 @@ public class WykonywaczDialogu : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.E) )
         {
-            if (PozycjaDialogu < dialog.TekstDialogu.Length)
+            if (PozycjaDialogu < dialog.panels.Length)
             {
                 PozycjaDialogu ++;
             }
         }
+
+        TekstDialogu.text = dialog.panels[PozycjaDialogu].text;
+        ObrazekPostaci.sprite = dialog.panels[PozycjaDialogu].Npc;
+        ObrazekDucha.sprite = GhostSpriteLoader.Instance.GetSprite(dialog.panels[PozycjaDialogu].state);
 
         if (PanelDialogowy.activeInHierarchy)
         {
@@ -74,10 +72,6 @@ public class WykonywaczDialogu : MonoBehaviour
             LookP.enabled = false;
             LookC.enabled = false;
         }
-
-        TekstDialogu.text = dialog.TekstDialogu[PozycjaDialogu];
-        ObrazekPostaci.sprite = dialog.ObrazekPostaci[PozycjaDialogu];
-        ObrazekDucha.sprite = dialog.ObrazekDucha[PozycjaDialogu];
 
     }
 
