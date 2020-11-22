@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Przedmiot
   - NPC
+  - Drzwi
   layers:
   - Default
   - TransparentFX

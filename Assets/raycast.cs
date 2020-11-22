@@ -37,27 +37,48 @@ public class raycast : MonoBehaviour
             }
             else
             {
-                if (hit.collider.gameObject.tag == "NPC")
-                {
-                    GameObject Npc = hit.collider.gameObject;
-                    DialogNPC dialog = Npc.GetComponent<DialogNPC>();
-                    Celownik.sprite = Talk;
 
-                    if (Input.GetMouseButtonDown(0))
+                
+                
+
+                    if (hit.collider.gameObject.tag == "NPC")
                     {
-                        WykonywaczDialogu.dialog = dialog.DialogPostaci;
-                        PanelDialogowy.SetActive(true);
+                        GameObject Npc = hit.collider.gameObject;
+                        DialogNPC dialog = Npc.GetComponent<DialogNPC>();
+                        Celownik.sprite = Talk;
+
+                        if (Input.GetMouseButtonDown(0))
+                        {
+                            WykonywaczDialogu.dialog = dialog.DialogPostaci;
+                            PanelDialogowy.SetActive(true);
+                        }
+
                     }
+                    else
+                    {
+                    if (hit.collider.gameObject.tag == "Drzwi")
+                    {
+                        GameObject Drzwi = hit.collider.gameObject;
+                        DialogNPC dialog = Drzwi.GetComponent<DialogNPC>();
+                        Celownik.sprite = Grab;
 
-                }
-                else { 
-                Celownik.sprite = Aim;}
-                //Celownik.sprite = Aim;
-                //     Animator K_Animator;
-                //     K_Animator = Klucz.GetComponent<Animator>();
-                //     K_Animator.SetBool("kluczanim", false);
+                        if (Input.GetMouseButtonDown(0))
+                        {
+                            WykonywaczDialogu.dialog = dialog.DialogPostaci;
+                            PanelDialogowy.SetActive(true);
+                        }
+                    }
+                    else { 
+                        Celownik.sprite = Aim;
+                    }
+                    
+                    //Celownik.sprite = Aim;
+                    //     Animator K_Animator;
+                    //     K_Animator = Klucz.GetComponent<Animator>();
+                    //     K_Animator.SetBool("kluczanim", false);
+                
             }
-
+         }
 
 
         }
@@ -65,6 +86,7 @@ public class raycast : MonoBehaviour
         {
             Celownik.sprite = Aim;
         }
+
     }
     
 }
