@@ -18,16 +18,25 @@ public class AktywatorDialogu : MonoBehaviour
         PanelDialogowy.SetActive(false);
     }
 
-
-
-    void OnCollisionEnter(Collision collision)
+    void OnTriggerEnter(Collider collision)
     {
         if ((collision.gameObject == ColiderUruchamiajacy) && (UruchamiaColider == true))
         {
             WykonywaczDialogu.dialog = dialogColidera;
-            
+
             PanelDialogowy.SetActive(true);
 
         }
     }
+
+   // void OnCollisionEnter(Collision collision)
+   // {
+   //     if ((collision.gameObject == ColiderUruchamiajacy) && (UruchamiaColider == true))
+   //     {
+   //         WykonywaczDialogu.dialog = dialogColidera;
+   //         
+   //         PanelDialogowy.SetActive(true);
+   //
+   //     }
+   // }
 }

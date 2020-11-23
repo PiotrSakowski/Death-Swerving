@@ -40,25 +40,24 @@ public class WykonywaczDialogu : MonoBehaviour
     {
         dialogPodgladowy = dialog;
 
-        if (PozycjaDialogu >= dialog.panels.Length)
-        {
-            PanelDialogowy.SetActive(false);
-            Debug.Log("Koniec dialogu");
-            PozycjaDialogu = 0;
-            PanelP.SetActive(true); 
-            PanelL.SetActive(true);
-            Celownik.SetActive(true);
-            Move.enabled = true;
-            LookP.enabled = true;
-            LookC.enabled = true;
-
-        }
 
         if (Input.GetKeyDown(KeyCode.E) )
         {
-            if (PozycjaDialogu < dialog.panels.Length)
+            if (PozycjaDialogu < dialog.panels.Length-1)
             {
                 PozycjaDialogu ++;
+            }else
+            {
+                PozycjaDialogu = 0;
+                PanelDialogowy.SetActive(false);
+                //Debug.Log("Koniec dialogu");
+
+                PanelP.SetActive(true);
+                PanelL.SetActive(true);
+                Celownik.SetActive(true);
+                Move.enabled = true;
+                LookP.enabled = true;
+                LookC.enabled = true;
             }
         }
 

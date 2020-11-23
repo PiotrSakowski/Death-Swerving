@@ -34,7 +34,7 @@ public class raycast : MonoBehaviour
 
                 if (Input.GetMouseButton(0))
                 {
-                    Debug.Log("Klucz_zebrany");
+                    //Debug.Log("Klucz_zebrany");
                     Destroy(hit.collider.gameObject);
                     KluczUI.SetActive(true);
                 }
@@ -64,7 +64,7 @@ public class raycast : MonoBehaviour
 
                         if (Input.GetMouseButtonDown(0))
                         {
-                            WykonywaczDialogu.dialog = dialog.DialogPostaci;
+                           // WykonywaczDialogu.dialog = dialog.DialogPostaci;
                             PanelDialogowy.SetActive(true);
                         }
                     }
