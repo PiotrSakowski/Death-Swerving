@@ -6,7 +6,8 @@ using UnityEngine.UI;
 
 public class raycast : MonoBehaviour
 {
-    public GameObject Klucz, KluczUI, PanelDialogowy;
+    public GameObject Klucz;
+    public GameObject  KluczUI, PanelDialogowy;
     public Image Celownik;
     public Sprite Aim, Grab, Talk;
 
@@ -20,6 +21,9 @@ public class raycast : MonoBehaviour
         if (Physics.Raycast(ray, out hit, 10f))
         {
             Debug.DrawRay(ray.origin, ray.direction, Color.red, 5f, true);
+
+            
+            
             if (hit.collider.gameObject == Klucz)
             {
                 //Debug.Log("Klucz_znaleziony");
@@ -37,10 +41,6 @@ public class raycast : MonoBehaviour
             }
             else
             {
-
-                
-                
-
                     if (hit.collider.gameObject.tag == "NPC")
                     {
                         GameObject Npc = hit.collider.gameObject;
@@ -68,8 +68,25 @@ public class raycast : MonoBehaviour
                             PanelDialogowy.SetActive(true);
                         }
                     }
-                    else { 
-                        Celownik.sprite = Aim;
+                    else {
+                        if (hit.collider.gameObject.tag == "Przedmiot")
+                        {
+                            GameObject Przedmiot = hit.collider.gameObject;
+                            Animator K_Animator;
+                            K_Animator = Przedmiot.GetComponent<Animator>();
+                            K_Animator.SetTrigger("klucztrigger");
+                            Celownik.sprite = Grab;
+                            if (Input.GetMouseButton(0))
+                            {
+                                Destroy(hit.collider.gameObject);
+                                //KluczUI.SetActive(true);
+                            }
+                        }
+                        else
+                        {
+                            Celownik.sprite = Aim;
+                        }
+                        
                     }
                     
                     //Celownik.sprite = Aim;
