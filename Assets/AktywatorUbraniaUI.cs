@@ -11,9 +11,9 @@ public class AktywatorUbraniaUI : MonoBehaviour
     private bool off2;
     private bool off3;
 
-    bool pokazane1;
-    bool pokazane2;
-    bool pokazane3;
+    public static bool pokazane1;
+    public static bool pokazane2;
+    public static bool pokazane3;
 
     private void Start()
     {
@@ -21,9 +21,9 @@ public class AktywatorUbraniaUI : MonoBehaviour
         off2 = true;
         off3 = true;
 
-        //pokazane1 = false;
-        //pokazane2 = false;
-        //pokazane3 = false;
+        pokazane1 = false;
+        pokazane2 = false;
+        pokazane3 = false;
 
 
     }
@@ -38,17 +38,27 @@ public class AktywatorUbraniaUI : MonoBehaviour
             Ubranie2.GetComponent<BoxCollider>().enabled = true;
             off1 = false;
         }
+
+        if (pokazane1 == true)
+        {
+            Ubranie3.GetComponent<BoxCollider>().enabled = true;
+        }
+
         if ((Ubranie2 == null) && (off2 == true))
         {
             Ubranie2UI.SetActive(true);
-            Ubranie3.GetComponent<BoxCollider>().enabled = true;
             off2 = false;
         }
+
+        if(pokazane2 == true)
+        {
+            Ubranie3.GetComponent<BoxCollider>().enabled = true;
+        }
+
         if ((Ubranie3 == null) && (off3 == true))
         {
             Ubranie3UI.SetActive(true);
             off3 = false;
-            return;
         }
 
     }
