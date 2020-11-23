@@ -410,7 +410,7 @@ MonoBehaviour:
   ObrazekPostaci: {fileID: 1965693790}
   ObrazekDucha: {fileID: 548690174}
   PozycjaDialogu: 0
-  dialogPodgladowy: {fileID: 0}
+  dialogPodgladowy: {fileID: 11400000, guid: ba713c74c0a8b2540aac27e816944f6f, type: 2}
 --- !u!1 &212559298
 GameObject:
   m_ObjectHideFlags: 0
@@ -928,6 +928,71 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 432385383}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &469244950
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 469244953}
+  - component: {fileID: 469244952}
+  - component: {fileID: 469244951}
+  m_Layer: 0
+  m_Name: Drzwi Demona
+  m_TagString: Drzwi
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!65 &469244951
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 469244950}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.035839, y: 3.0086522, z: 1}
+  m_Center: {x: -1.0066407, y: 0.02523458, z: 0}
+--- !u!95 &469244952
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 469244950}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 3a3b16a1549798d4abf6477ff3fabfd3, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!4 &469244953
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 469244950}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 11.51, y: 1.63, z: -13.38}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1571164793}
+  m_Father: {fileID: 0}
+  m_RootOrder: 17
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &512128849
 GameObject:
   m_ObjectHideFlags: 0
@@ -2875,6 +2940,99 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 8004481509181611734, guid: 729320e773f17994bb27d9fc39724499, type: 3}
+--- !u!1 &1571164792
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1571164793}
+  - component: {fileID: 1571164796}
+  - component: {fileID: 1571164795}
+  - component: {fileID: 1571164794}
+  m_Layer: 0
+  m_Name: DrzwiMesh
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1571164793
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1571164792}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -1, y: 0, z: 0}
+  m_LocalScale: {x: 2, y: 3, z: 0.5}
+  m_Children: []
+  m_Father: {fileID: 469244953}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1571164794
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1571164792}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &1571164795
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1571164792}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 8844cdf32e85a304b90a265d97fa05db, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &1571164796
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1571164792}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &1577611441
 GameObject:
   m_ObjectHideFlags: 0
@@ -2982,6 +3140,7 @@ GameObject:
   - component: {fileID: 1579203608}
   - component: {fileID: 1579203607}
   - component: {fileID: 1579203612}
+  - component: {fileID: 1579203613}
   m_Layer: 0
   m_Name: DemonNpc
   m_TagString: NPC
@@ -3089,10 +3248,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44640a8bfd805b64a9b421a97c7ad02d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Dialog0Item: {fileID: 0}
-  Dialog1Item: {fileID: 0}
-  Dialog2Item: {fileID: 0}
-  Dialog3Item: {fileID: 0}
+  Dialog1Item: {fileID: 11400000, guid: 9928301f55b1fc846839240ab6fc5928, type: 2}
+  Dialog2Item: {fileID: 11400000, guid: 85d30282641d54f41929797322994c94, type: 2}
+  Dialog3Item: {fileID: 11400000, guid: 1742bc09fd25ebf49869539c25f25999, type: 2}
+  Ubranie1UI: {fileID: 364338561}
+  Ubranie2UI: {fileID: 512128849}
+  Ubranie3UI: {fileID: 1329755172}
+--- !u!114 &1579203613
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1579203606}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d06908102828ca4eb55fe3c709369df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Ubranie1: {fileID: 669274726}
+  Ubranie2: {fileID: 1344108218}
+  Ubranie3: {fileID: 2131798823}
+  Ubranie1UI: {fileID: 364338561}
+  Ubranie2UI: {fileID: 512128849}
+  Ubranie3UI: {fileID: 1329755172}
+  PanelDialogowy: {fileID: 197890518}
 --- !u!1 &1582544834
 GameObject:
   m_ObjectHideFlags: 0
@@ -4072,7 +4252,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5639149827688333664}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8d06908102828ca4eb55fe3c709369df, type: 3}
   m_Name: 
@@ -4083,6 +4263,7 @@ MonoBehaviour:
   Ubranie1UI: {fileID: 364338561}
   Ubranie2UI: {fileID: 512128849}
   Ubranie3UI: {fileID: 1329755172}
+  PanelDialogowy: {fileID: 197890518}
 --- !u!4 &5639149827688333669
 Transform:
   m_ObjectHideFlags: 0

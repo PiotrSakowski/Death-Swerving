@@ -40,12 +40,16 @@ public class DialogiDemona : MonoBehaviour
 
             off2 = false;
             off3 = true;
+
+            AktywatorUbraniaUI.pokazane2 = true;
         }
         if ((Ubranie3UI.activeInHierarchy) && (off3 == true))
         {
             gameObject.GetComponent<DialogNPC>().DialogPostaci = Dialog3Item;
 
             off3 = false;
+
+            AktywatorUbraniaUI.pokazane3 = true;
         }
     }
 

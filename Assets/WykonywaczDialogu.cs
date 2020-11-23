@@ -17,6 +17,7 @@ public class WykonywaczDialogu : MonoBehaviour
     public Text TekstDialogu;
     public Image ObrazekPostaci;
     public Image ObrazekDucha;
+    public Sprite PustyObrazek;
 
     public int PozycjaDialogu;
 
@@ -29,6 +30,8 @@ public class WykonywaczDialogu : MonoBehaviour
 
         Move = Player.GetComponent<Poruszanie>();
         LookP = Player.GetComponent<MouseLook>();
+
+        dialog = dialogPodgladowy;
 
     }
 
@@ -71,6 +74,11 @@ public class WykonywaczDialogu : MonoBehaviour
             Move.enabled = false;
             LookP.enabled = false;
             LookC.enabled = false;
+        }
+
+        if(ObrazekPostaci.sprite == null)
+        {
+            ObrazekPostaci.sprite = PustyObrazek;
         }
 
     }

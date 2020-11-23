@@ -12,4 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e85ad2320aa211946a85e2a1a9e9bdae, type: 3}
   m_Name: Demon1Item
   m_EditorClassIdentifier: 
-  panels: []
+  panels:
+  - text: Pierwsze ubranie brzydkie!
+    state: 0
+    Npc: {fileID: 0}
