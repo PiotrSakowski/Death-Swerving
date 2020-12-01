@@ -11,6 +11,7 @@ public class raycast : MonoBehaviour
     public Image Celownik;
     public Sprite Aim, Grab, Talk;
 
+    public LayerMask mask;
 
     void Update()
     {
@@ -18,7 +19,7 @@ public class raycast : MonoBehaviour
 
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
 
-        if (Physics.Raycast(ray, out hit, 10f))
+        if (Physics.Raycast(ray, out hit, 10f, mask))
         {
             Debug.DrawRay(ray.origin, ray.direction, Color.red, 5f, true);
 

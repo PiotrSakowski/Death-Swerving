@@ -41,7 +41,8 @@ public class AktywatorUbraniaUI : MonoBehaviour
 
         if ((Ubranie2 != null) && (pokazane1 == true) && (PanelDialogowy.activeInHierarchy) && (WykonywaczDialogu.dialog == gameObject.GetComponent<DialogiDemona>().Dialog1Item))
         {
-            Ubranie2.GetComponent<BoxCollider>().enabled = true;
+            //Ubranie2.GetComponent<BoxCollider>().enabled = true;
+            Ubranie2.layer = LayerMask.NameToLayer("InteractionLayer");
         }
 
         if ((Ubranie2 == null) && (off2 == true))
@@ -52,7 +53,8 @@ public class AktywatorUbraniaUI : MonoBehaviour
 
         if ((Ubranie3 != null) && (pokazane2 == true) && (PanelDialogowy.activeInHierarchy) && (WykonywaczDialogu.dialog == gameObject.GetComponent<DialogiDemona>().Dialog2Item))
         {
-            Ubranie3.GetComponent<BoxCollider>().enabled = true;
+            //Ubranie3.GetComponent<BoxCollider>().enabled = true;
+            Ubranie3.layer = LayerMask.NameToLayer("InteractionLayer");
         }
 
         if ((Ubranie3 == null) && (off3 == true))
