@@ -1,1 +1,4 @@
 - Added main menu background (JPG. and PSD.)
+- Fixed movement
+- Planned 3 rooms (plans and moodboards in Wytyczne)
+- Built 3 Rooms in Game Scene
