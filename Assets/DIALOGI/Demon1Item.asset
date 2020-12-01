@@ -15,4 +15,4 @@ MonoBehaviour:
   panels:
   - text: Pierwsze ubranie brzydkie!
     state: 0
-    Npc: {fileID: 0}
+    Npc: {fileID: 21300000, guid: 86ddbb393247c1841b6e120428cc9f62, type: 3}

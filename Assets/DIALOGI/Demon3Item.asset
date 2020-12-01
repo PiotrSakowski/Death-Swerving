@@ -15,4 +15,4 @@ MonoBehaviour:
   panels:
   - text: A ten fajnie, no nie powiem, mozesz isc.
     state: 0
-    Npc: {fileID: 0}
+    Npc: {fileID: 21300000, guid: a66ae1d445e1dbc418a9b91ca709494b, type: 3}

@@ -15,4 +15,4 @@ MonoBehaviour:
   panels:
   - text: Niejadalne number duo
     state: 0
-    Npc: {fileID: 0}
+    Npc: {fileID: 21300000, guid: 426c37c858a19dc46b66deca0b960cdb, type: 3}

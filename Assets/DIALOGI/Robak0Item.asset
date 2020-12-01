@@ -15,4 +15,4 @@ MonoBehaviour:
   panels:
   - text: "Nie radze przechodzi\u0107, bo si\u0119 o mnie po\u015Bli\u017Aniesz."
     state: 0
-    Npc: {fileID: 0}
+    Npc: {fileID: 21300000, guid: 0e8efa7ddc9820b4e8ecea09c3ddd998, type: 3}

@@ -32,6 +32,16 @@ public class WSADinfo : MonoBehaviour
             Animator wsadznikacz;
             wsadznikacz = wsadownik.GetComponent<Animator>();
             wsadznikacz.SetTrigger("PrzeklikaneWSAD");
+            StartCoroutine("ZniszczPoAnimacji");
         }
+       
+
     }
+
+    IEnumerator ZniszczPoAnimacji()
+    {
+        yield return new WaitForSeconds(1.35f);
+        Destroy(gameObject);
+    }
+
 }

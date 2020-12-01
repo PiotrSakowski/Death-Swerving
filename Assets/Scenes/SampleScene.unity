@@ -331,6 +331,7 @@ MonoBehaviour:
   PanelP: {fileID: 3555762133076294402}
   PanelL: {fileID: 5639149828701078387}
   Celownik: {fileID: 7487862988322573072}
+  WSADinfo: {fileID: 672208842}
   Player: {fileID: 241323671}
   LookC: {fileID: 963194229}
   TekstDialogu: {fileID: 738004780}
@@ -1952,8 +1953,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 350, y: 0}
-  m_SizeDelta: {x: 700, y: 700}
+  m_AnchoredPosition: {x: 335.7, y: 14.73}
+  m_SizeDelta: {x: 450, y: 450}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &548690174
 MonoBehaviour:
@@ -7095,8 +7096,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -350, y: 0}
-  m_SizeDelta: {x: 700, y: 700}
+  m_AnchoredPosition: {x: -425.9, y: 29.62}
+  m_SizeDelta: {x: 800, y: 800}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1965693790
 MonoBehaviour:

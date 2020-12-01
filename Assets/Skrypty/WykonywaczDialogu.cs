@@ -7,7 +7,7 @@ public class WykonywaczDialogu : MonoBehaviour
 {
     public static Dialog dialog;
 
-    public GameObject PanelDialogowy, PanelP, PanelL, Celownik;
+    public GameObject PanelDialogowy, PanelP, PanelL, Celownik, WSADinfo;
 
     public GameObject Player;
     private Poruszanie Move;
@@ -58,6 +58,11 @@ public class WykonywaczDialogu : MonoBehaviour
                 Move.enabled = true;
                 LookP.enabled = true;
                 LookC.enabled = true;
+
+                if (WSADinfo != null)
+                {
+                    WSADinfo.SetActive(true);
+                }
             }
         }
 
@@ -73,6 +78,11 @@ public class WykonywaczDialogu : MonoBehaviour
             Move.enabled = false;
             LookP.enabled = false;
             LookC.enabled = false;
+
+            if (WSADinfo != null)
+            {
+                WSADinfo.SetActive(false);
+            }
         }
 
         if(ObrazekPostaci.sprite == null)

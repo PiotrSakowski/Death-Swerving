@@ -15,4 +15,4 @@ MonoBehaviour:
   panels:
   - text: Ubierz sie.
     state: 0
-    Npc: {fileID: 21300000, guid: 9c156109cf5ef4a4cba6ae250c0220e7, type: 3}
+    Npc: {fileID: 21300000, guid: 3a9f91cd5fec75541a5bb80fcee72900, type: 3}
