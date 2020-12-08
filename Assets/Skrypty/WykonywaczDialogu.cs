@@ -3,8 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class WykonywaczDialogu : MonoBehaviour
-{
+public class WykonywaczDialogu : MonoBehaviour {
+
+    public static WykonywaczDialogu Instance { get; private set; }
+
     public static Dialog dialog;
 
     public GameObject PanelDialogowy, PanelP, PanelL, Celownik, WSADinfo;
@@ -23,9 +25,11 @@ public class WykonywaczDialogu : MonoBehaviour
 
     public Dialog dialogPodgladowy;
 
+    private void Awake() {
+        Instance = this;
+    }
 
-    void Start()
-    {
+    void Start() {
         PozycjaDialogu = 0;
 
         Move = Player.GetComponent<Poruszanie>();
@@ -36,18 +40,14 @@ public class WykonywaczDialogu : MonoBehaviour
     }
 
 
-    private void Update()
-    {
+    private void Update() {
         dialogPodgladowy = dialog;
 
 
-        if (Input.GetKeyDown(KeyCode.E) )
-        {
-            if (PozycjaDialogu < dialog.panels.Length-1)
-            {
-                PozycjaDialogu ++;
-            }else
-            {
+        if(Input.GetKeyDown(KeyCode.E)) {
+            if(PozycjaDialogu < dialog.panels.Length - 1) {
+                PozycjaDialogu++;
+            } else {
                 PozycjaDialogu = 0;
                 PanelDialogowy.SetActive(false);
                 //Debug.Log("Koniec dialogu");
@@ -59,8 +59,7 @@ public class WykonywaczDialogu : MonoBehaviour
                 LookP.enabled = true;
                 LookC.enabled = true;
 
-                if (WSADinfo != null)
-                {
+                if(WSADinfo != null) {
                     WSADinfo.SetActive(true);
                 }
             }
@@ -70,8 +69,7 @@ public class WykonywaczDialogu : MonoBehaviour
         ObrazekPostaci.sprite = dialog.panels[PozycjaDialogu].Npc;
         ObrazekDucha.sprite = GhostSpriteLoader.Instance.GetSprite(dialog.panels[PozycjaDialogu].state);
 
-        if (PanelDialogowy.activeInHierarchy)
-        {
+        if(PanelDialogowy.activeInHierarchy) {
             PanelP.SetActive(false);
             PanelL.SetActive(false);
             Celownik.SetActive(false);
@@ -79,14 +77,12 @@ public class WykonywaczDialogu : MonoBehaviour
             LookP.enabled = false;
             LookC.enabled = false;
 
-            if (WSADinfo != null)
-            {
+            if(WSADinfo != null) {
                 WSADinfo.SetActive(false);
             }
         }
 
-        if(ObrazekPostaci.sprite == null)
-        {
+        if(ObrazekPostaci.sprite == null) {
             ObrazekPostaci.sprite = PustyObrazek;
         }
 
