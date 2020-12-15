@@ -1435,6 +1435,7 @@ GameObject:
   - component: {fileID: 444519514}
   - component: {fileID: 444519513}
   - component: {fileID: 444519512}
+  - component: {fileID: 444519519}
   m_Layer: 10
   m_Name: RobakNPC
   m_TagString: NPC
@@ -1568,6 +1569,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &444519519
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 444519511}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b23128a8211dad4caaac413ccf05ce3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  celownik: {fileID: 21300000, guid: 95ea87c40328fd64392ce8ab6be5a294, type: 3}
+  PanelDialogowy: {fileID: 0}
 --- !u!1 &469244950
 GameObject:
   m_ObjectHideFlags: 0
@@ -1626,7 +1641,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 469244950}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 11.51, y: 1.63, z: -13.38}
+  m_LocalPosition: {x: -10.86, y: 1.63, z: -13.38}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1571164793}
@@ -1892,6 +1907,7 @@ GameObject:
   - component: {fileID: 522347789}
   - component: {fileID: 522347788}
   - component: {fileID: 522347792}
+  - component: {fileID: 522347793}
   m_Layer: 10
   m_Name: klucz
   m_TagString: Przedmiot
@@ -1992,6 +2008,21 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &522347793
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 522347787}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5bcd9ffd04c33cf429afc7d96b8c9c5e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  celownik: {fileID: 21300000, guid: 2ddd0bdc420544f4e91a470aaaabdc12, type: 3}
+  Klucz: {fileID: 522347787}
+  KluczUI: {fileID: 1075565599}
 --- !u!1 &530426143
 GameObject:
   m_ObjectHideFlags: 0
@@ -2005,6 +2036,7 @@ GameObject:
   - component: {fileID: 530426146}
   - component: {fileID: 530426145}
   - component: {fileID: 530426144}
+  - component: {fileID: 530426149}
   m_Layer: 10
   m_Name: Potrawa 1
   m_TagString: Przedmiot
@@ -2105,6 +2137,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &530426149
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 530426143}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5bcd9ffd04c33cf429afc7d96b8c9c5e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  celownik: {fileID: 21300000, guid: 2ddd0bdc420544f4e91a470aaaabdc12, type: 3}
+  Klucz: {fileID: 530426143}
+  KluczUI: {fileID: 1996713077}
 --- !u!1 &548690172
 GameObject:
   m_ObjectHideFlags: 0
@@ -2500,6 +2547,7 @@ GameObject:
   - component: {fileID: 669274729}
   - component: {fileID: 669274728}
   - component: {fileID: 669274727}
+  - component: {fileID: 669274732}
   m_Layer: 10
   m_Name: Ubranie1
   m_TagString: Przedmiot
@@ -2600,6 +2648,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &669274732
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 669274726}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5bcd9ffd04c33cf429afc7d96b8c9c5e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  celownik: {fileID: 21300000, guid: 2ddd0bdc420544f4e91a470aaaabdc12, type: 3}
+  Klucz: {fileID: 669274726}
+  KluczUI: {fileID: 364338561}
 --- !u!1 &672208842
 GameObject:
   m_ObjectHideFlags: 0
@@ -3398,7 +3461,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 884734472}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 11.51, y: 1.63, z: 9.85}
+  m_LocalPosition: {x: -6.87, y: 1.63, z: 7.44}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2047246948}
@@ -3974,7 +4037,8 @@ GameObject:
   - component: {fileID: 1183329323}
   - component: {fileID: 1183329322}
   - component: {fileID: 1183329326}
-  m_Layer: 0
+  - component: {fileID: 1183329327}
+  m_Layer: 10
   m_Name: NPCDummy
   m_TagString: NPC
   m_Icon: {fileID: 0}
@@ -4069,6 +4133,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DialogPostaci: {fileID: 11400000, guid: ba713c74c0a8b2540aac27e816944f6f, type: 2}
+--- !u!114 &1183329327
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1183329321}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b23128a8211dad4caaac413ccf05ce3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  celownik: {fileID: 21300000, guid: 95ea87c40328fd64392ce8ab6be5a294, type: 3}
+  PanelDialogowy: {fileID: 0}
 --- !u!1 &1218227545
 GameObject:
   m_ObjectHideFlags: 0
@@ -4802,6 +4880,7 @@ GameObject:
   - component: {fileID: 1344108220}
   - component: {fileID: 1344108219}
   - component: {fileID: 1344108223}
+  - component: {fileID: 1344108224}
   m_Layer: 0
   m_Name: Ubranie2
   m_TagString: Przedmiot
@@ -4902,6 +4981,21 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1344108224
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1344108218}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5bcd9ffd04c33cf429afc7d96b8c9c5e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  celownik: {fileID: 21300000, guid: 2ddd0bdc420544f4e91a470aaaabdc12, type: 3}
+  Klucz: {fileID: 1344108218}
+  KluczUI: {fileID: 512128849}
 --- !u!1 &1430917834
 GameObject:
   m_ObjectHideFlags: 0
@@ -5339,7 +5433,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1571164792}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -19.1, y: 0.1500001, z: -1.8500023}
+  m_LocalPosition: {x: -0.5, y: 0, z: 0}
   m_LocalScale: {x: 2, y: 3, z: 0.5}
   m_Children: []
   m_Father: {fileID: 469244953}
@@ -5417,6 +5511,7 @@ GameObject:
   - component: {fileID: 1577611445}
   - component: {fileID: 1577611444}
   - component: {fileID: 1577611443}
+  - component: {fileID: 1577611446}
   m_Layer: 10
   m_Name: DrzwiMesh
   m_TagString: Drzwi
@@ -5432,7 +5527,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1577611441}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -19.1, y: 0.1500001, z: -1.8500023}
+  m_LocalPosition: {x: -0.5, y: 0, z: 0}
   m_LocalScale: {x: 2, y: 3, z: 0.5}
   m_Children: []
   m_Father: {fileID: 1582544836}
@@ -5498,6 +5593,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1577611441}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1577611446
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1577611441}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b23128a8211dad4caaac413ccf05ce3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  celownik: {fileID: 21300000, guid: 95ea87c40328fd64392ce8ab6be5a294, type: 3}
+  PanelDialogowy: {fileID: 0}
 --- !u!1 &1579203606
 GameObject:
   m_ObjectHideFlags: 0
@@ -5512,6 +5621,7 @@ GameObject:
   - component: {fileID: 1579203608}
   - component: {fileID: 1579203607}
   - component: {fileID: 1579203612}
+  - component: {fileID: 1579203614}
   - component: {fileID: 1579203613}
   m_Layer: 10
   m_Name: DemonNpc
@@ -5646,6 +5756,20 @@ MonoBehaviour:
   Ubranie3UI: {fileID: 1329755172}
   PanelDialogowy: {fileID: 197890518}
   DrzwiDemona: {fileID: 469244950}
+--- !u!114 &1579203614
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1579203606}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b23128a8211dad4caaac413ccf05ce3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  celownik: {fileID: 21300000, guid: 95ea87c40328fd64392ce8ab6be5a294, type: 3}
+  PanelDialogowy: {fileID: 0}
 --- !u!1 &1580960908
 GameObject:
   m_ObjectHideFlags: 0
@@ -5893,6 +6017,7 @@ GameObject:
   - component: {fileID: 1582544836}
   - component: {fileID: 1582544835}
   - component: {fileID: 1582544837}
+  - component: {fileID: 1582544838}
   m_Layer: 0
   m_Name: Drzwi
   m_TagString: Drzwi
@@ -5927,7 +6052,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1582544834}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1, y: 1.63, z: -13.38}
+  m_LocalPosition: {x: -20.17, y: 1.63, z: -15.18}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1577611442}
@@ -5947,6 +6072,20 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.035839, y: 3.0086522, z: 1}
   m_Center: {x: -1.0066407, y: 0.02523458, z: 0}
+--- !u!114 &1582544838
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1582544834}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b23128a8211dad4caaac413ccf05ce3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  celownik: {fileID: 21300000, guid: 95ea87c40328fd64392ce8ab6be5a294, type: 3}
+  PanelDialogowy: {fileID: 0}
 --- !u!1 &1621796319
 GameObject:
   m_ObjectHideFlags: 0
@@ -5960,6 +6099,7 @@ GameObject:
   - component: {fileID: 1621796322}
   - component: {fileID: 1621796321}
   - component: {fileID: 1621796320}
+  - component: {fileID: 1621796325}
   m_Layer: 0
   m_Name: Potrawa 3 wlasciwa
   m_TagString: Przedmiot
@@ -6060,6 +6200,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1621796325
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1621796319}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5bcd9ffd04c33cf429afc7d96b8c9c5e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  celownik: {fileID: 21300000, guid: 2ddd0bdc420544f4e91a470aaaabdc12, type: 3}
+  Klucz: {fileID: 1621796319}
+  KluczUI: {fileID: 1738674549}
 --- !u!1 &1648788822
 GameObject:
   m_ObjectHideFlags: 0
@@ -6193,6 +6348,7 @@ GameObject:
   - component: {fileID: 1676789853}
   - component: {fileID: 1676789852}
   - component: {fileID: 1676789851}
+  - component: {fileID: 1676789856}
   m_Layer: 0
   m_Name: Potrawa 2
   m_TagString: Przedmiot
@@ -6293,6 +6449,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1676789856
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1676789850}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5bcd9ffd04c33cf429afc7d96b8c9c5e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  celownik: {fileID: 21300000, guid: 2ddd0bdc420544f4e91a470aaaabdc12, type: 3}
+  Klucz: {fileID: 1676789850}
+  KluczUI: {fileID: 1268954396}
 --- !u!1 &1683268383
 GameObject:
   m_ObjectHideFlags: 0
@@ -7792,7 +7963,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2047246947}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -19.1, y: 0.1500001, z: -1.8500023}
+  m_LocalPosition: {x: -0.5, y: 0, z: 0}
   m_LocalScale: {x: 2, y: 3, z: 0.5}
   m_Children: []
   m_Father: {fileID: 884734475}
@@ -7910,6 +8081,7 @@ GameObject:
   - component: {fileID: 2131798825}
   - component: {fileID: 2131798824}
   - component: {fileID: 2131798828}
+  - component: {fileID: 2131798829}
   m_Layer: 0
   m_Name: Ubranie3 wlasciwe
   m_TagString: Przedmiot
@@ -8010,6 +8182,21 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &2131798829
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2131798823}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5bcd9ffd04c33cf429afc7d96b8c9c5e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  celownik: {fileID: 21300000, guid: 2ddd0bdc420544f4e91a470aaaabdc12, type: 3}
+  Klucz: {fileID: 2131798823}
+  KluczUI: {fileID: 1329755172}
 --- !u!222 &588173690871083512
 CanvasRenderer:
   m_ObjectHideFlags: 0
