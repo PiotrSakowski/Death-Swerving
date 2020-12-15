@@ -13,17 +13,10 @@ public class KluczInteraction : InteractionItem
     {
         base.Awake();
         dialog = GetComponent<DialogNPC>();
-        //anim.SetTrigger("klucztrigger");
     }
 
     public override void Interact()
     {
-
-        //WykonywaczDialogu.dialog = dialog.DialogPostaci;
-        //WykonywaczDialogu.Instance.PanelDialogowy.SetActive(true);
-
-        //anim.SetTrigger("klucztrigger");
-
         if (Klucz == null)
         {
             return;

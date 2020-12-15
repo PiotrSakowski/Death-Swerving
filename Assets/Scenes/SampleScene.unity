@@ -3667,7 +3667,7 @@ MonoBehaviour:
   Talk: {fileID: 21300000, guid: 95ea87c40328fd64392ce8ab6be5a294, type: 3}
   mask:
     serializedVersion: 2
-    m_Bits: 1024
+    m_Bits: 1025
 --- !u!114 &963194231
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -13,14 +13,10 @@ public class DialogInteractionItem : InteractionItem
         base.Awake();
         dialog = GetComponent<DialogNPC>();
         PanelDialogowy = GameObject.Find("Panel_Dialogowy1");
-        //anim.SetTrigger("klucztrigger");
     }
 
     public override void Interact()
     {
-
-        //WykonywaczDialogu.dialog = dialog.DialogPostaci;
-        //WykonywaczDialogu.Instance.PanelDialogowy.SetActive(true);
 
         if (Input.GetMouseButtonDown(0) && dialog != null)
         {

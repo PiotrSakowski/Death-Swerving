@@ -19,7 +19,7 @@ public class raycast : MonoBehaviour {
 
         if(Physics.Raycast(ray, out hit, 10f, mask)) {
 
-            //Debug.Log(hit.collider.gameObject.name);
+            Debug.Log(hit.collider.gameObject.name);
             if(hit.collider.gameObject.layer == LayerMask.NameToLayer("Default")) {
                 Celownik.sprite = Aim;
                 return;
@@ -44,65 +44,7 @@ public class raycast : MonoBehaviour {
                 K_Animator = Przedmiot.GetComponent<Animator>();
                 K_Animator.SetTrigger("klucztrigger");
             }
-
-                //if(hit.collider.gameObject == Klucz) {
-                //    //Debug.Log("Klucz_znaleziony");
-                //    Animator K_Animator;
-                //    K_Animator = Klucz.GetComponent<Animator>();
-                //    K_Animator.SetTrigger("klucztrigger");
-                //    Celownik.sprite = Grab;
-
-                //    if(Input.GetMouseButton(0)) {
-                //        //Debug.Log("Klucz_zebrany");
-                //        Destroy(hit.collider.gameObject);
-                //        KluczUI.SetActive(true);
-                //    }
-                //} else {
-                //    if(hit.collider.gameObject.tag == "NPC") {
-                //        GameObject Npc = hit.collider.gameObject;
-                //        DialogNPC dialog = Npc.GetComponent<DialogNPC>();
-                //        Celownik.sprite = Talk;
-
-                //        if(Input.GetMouseButtonDown(0)) {
-                //            WykonywaczDialogu.dialog = dialog.DialogPostaci;
-                //            PanelDialogowy.SetActive(true);
-                //        }
-
-                //    } else {
-                //        if(hit.collider.gameObject.tag == "Drzwi") {
-                //            GameObject Drzwi = hit.collider.gameObject;
-                //            DialogNPC dialog = Drzwi.GetComponent<DialogNPC>();
-                //            Celownik.sprite = Grab;
-
-                //            if(Input.GetMouseButtonDown(0)) {
-                //                // WykonywaczDialogu.dialog = dialog.DialogPostaci;
-                //                PanelDialogowy.SetActive(true);
-                //            }
-                //        } else {
-                //            if(hit.collider.gameObject.tag == "Przedmiot") {
-                //                GameObject Przedmiot = hit.collider.gameObject;
-                //                Animator K_Animator;
-                //                K_Animator = Przedmiot.GetComponent<Animator>();
-                //                K_Animator.SetTrigger("klucztrigger");
-                //                Celownik.sprite = Grab;
-                //                if(Input.GetMouseButton(0)) {
-                //                    Destroy(hit.collider.gameObject);
-                //                    //KluczUI.SetActive(true);
-                //                }
-                //            } else {
-                //                Celownik.sprite = Aim;
-                //            }
-
-                //        }
-
-                //        //Celownik.sprite = Aim;
-                //        //     Animator K_Animator;
-                //        //     K_Animator = Klucz.GetComponent<Animator>();
-                //        //     K_Animator.SetBool("kluczanim", false);
-
-                //    }
-                //}
-
+            
 
             }
             else {

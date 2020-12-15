@@ -5,14 +5,5 @@ using UnityEngine;
 public class DialogNPC : MonoBehaviour
 {
     public Dialog DialogPostaci;
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    
 }
