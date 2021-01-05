@@ -17,8 +17,10 @@ public class raycast : MonoBehaviour {
 
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
 
-        if(Physics.Raycast(ray, out hit, 10f, mask)) {
+        if(Physics.Raycast(ray, out hit, 10f, mask.value)) {
 
+            if(hit.collider.gameObject.name == "Drzwi")
+                ;
             Debug.Log(hit.collider.gameObject.name);
             if(hit.collider.gameObject.layer == LayerMask.NameToLayer("Default")) {
                 Celownik.sprite = Aim;
@@ -33,21 +35,19 @@ public class raycast : MonoBehaviour {
             if(aa == null)
                 return;
             Celownik.sprite = aa.celownik;
-            if (Input.GetMouseButton(0)) {
+            if(Input.GetMouseButton(0)) {
                 aa.Interact();
             }
 
-            if (hit.collider.gameObject.tag == "Przedmiot")
-            {
+            if(hit.collider.gameObject.tag == "Przedmiot") {
                 GameObject Przedmiot = hit.collider.gameObject;
                 Animator K_Animator;
                 K_Animator = Przedmiot.GetComponent<Animator>();
                 K_Animator.SetTrigger("klucztrigger");
             }
-            
 
-            }
-            else {
+
+        } else {
             Celownik.sprite = Aim;
         }
 

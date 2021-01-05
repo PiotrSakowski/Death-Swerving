@@ -3556,7 +3556,6 @@ GameObject:
   - component: {fileID: 963194229}
   - component: {fileID: 963194230}
   - component: {fileID: 963194231}
-  - component: {fileID: 963194232}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -3680,24 +3679,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 481c8c00ebfc3634c9deb1f01b724a75, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &963194232
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 963194225}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 923f7d1ae537be240b37ff13d858bc19, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  KluczDoDrzwi: {fileID: 1075565599}
-  PanelDialogowy: {fileID: 197890518}
-  dialogDrzwiOtwartych: {fileID: 11400000, guid: 4f5cc2ede348dea419ddfea3cc3d577f,
-    type: 2}
-  dialogDrzwiZamknietych: {fileID: 11400000, guid: 71d92c42709371f4697ffc198009cab2,
-    type: 2}
 --- !u!1 &1051285449 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -8880310231043601062, guid: 729320e773f17994bb27d9fc39724499,
@@ -5510,8 +5491,6 @@ GameObject:
   - component: {fileID: 1577611442}
   - component: {fileID: 1577611445}
   - component: {fileID: 1577611444}
-  - component: {fileID: 1577611443}
-  - component: {fileID: 1577611446}
   m_Layer: 10
   m_Name: DrzwiMesh
   m_TagString: Drzwi
@@ -5533,19 +5512,6 @@ Transform:
   m_Father: {fileID: 1582544836}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &1577611443
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1577611441}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1577611444
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5593,20 +5559,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1577611441}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &1577611446
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1577611441}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1b23128a8211dad4caaac413ccf05ce3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  celownik: {fileID: 21300000, guid: 95ea87c40328fd64392ce8ab6be5a294, type: 3}
-  PanelDialogowy: {fileID: 0}
 --- !u!1 &1579203606
 GameObject:
   m_ObjectHideFlags: 0
@@ -6017,8 +5969,8 @@ GameObject:
   - component: {fileID: 1582544836}
   - component: {fileID: 1582544835}
   - component: {fileID: 1582544837}
-  - component: {fileID: 1582544838}
-  m_Layer: 0
+  - component: {fileID: 1582544839}
+  m_Layer: 10
   m_Name: Drzwi
   m_TagString: Drzwi
   m_Icon: {fileID: 0}
@@ -6072,7 +6024,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.035839, y: 3.0086522, z: 1}
   m_Center: {x: -1.0066407, y: 0.02523458, z: 0}
---- !u!114 &1582544838
+--- !u!114 &1582544839
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -6081,11 +6033,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1582544834}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1b23128a8211dad4caaac413ccf05ce3, type: 3}
+  m_Script: {fileID: 11500000, guid: 26afd7c1158d4fa4383dc4075b984b58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   celownik: {fileID: 21300000, guid: 95ea87c40328fd64392ce8ab6be5a294, type: 3}
   PanelDialogowy: {fileID: 0}
+  KluczDoDrzwi: {fileID: 1075565599}
 --- !u!1 &1621796319
 GameObject:
   m_ObjectHideFlags: 0
