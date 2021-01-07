@@ -19,7 +19,7 @@ public class raycast : MonoBehaviour {
 
         if(Physics.Raycast(ray, out hit, 10f, mask)) {
 
-            Debug.Log(hit.collider.gameObject.name);
+            //Debug.Log(hit.collider.gameObject.name);
             if(hit.collider.gameObject.layer == LayerMask.NameToLayer("Default")) {
                 Celownik.sprite = Aim;
                 return;

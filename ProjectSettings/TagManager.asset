@@ -8,6 +8,7 @@ TagManager:
   - NPC
   - Drzwi
   - IkonaPrzedmiotu
+  - respawnZone
   layers:
   - Default
   - TransparentFX
