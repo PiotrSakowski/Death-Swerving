@@ -5,38 +5,21 @@ using UnityEngine;
 public class AktywatorDialogu : MonoBehaviour
 {
     public GameObject PanelDialogowy;
-
-    public bool UruchamiaColider;
     public GameObject ColiderUruchamiajacy;
+    public Dialog dialogColideraa;
 
-    public Dialog dialogColidera;
-
-
-    void Start()
-    {
-
-        PanelDialogowy.SetActive(false);
-    }
 
     void OnTriggerEnter(Collider collision)
     {
-        if ((collision.gameObject == ColiderUruchamiajacy) && (UruchamiaColider == true))
+        if ((collision.gameObject == ColiderUruchamiajacy))
         {
-            WykonywaczDialogu.dialog = dialogColidera;
+            WykonywaczDialogu.dialog = dialogColideraa;
 
             PanelDialogowy.SetActive(true);
 
         }
     }
 
-   // void OnCollisionEnter(Collision collision)
-   // {
-   //     if ((collision.gameObject == ColiderUruchamiajacy) && (UruchamiaColider == true))
-   //     {
-   //         WykonywaczDialogu.dialog = dialogColidera;
-   //         
-   //         PanelDialogowy.SetActive(true);
-   //
-   //     }
-   // }
+
+
 }
