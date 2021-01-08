@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class OtwieraczDrzwi : MonoBehaviour
 {
-
+    public Animator D_Animator;
     public GameObject KluczDoDrzwi;
     public GameObject PanelDialogowy;
     public Dialog dialogDrzwiOtwartych;
@@ -31,8 +31,8 @@ public class OtwieraczDrzwi : MonoBehaviour
             if (hit.collider.gameObject.tag == "Drzwi")
             {
                 GameObject Drzwi = hit.collider.gameObject;
-                Animator D_Animator;
-                D_Animator = Drzwi.GetComponent<Animator>();
+                //Animator D_Animator;
+                //D_Animator = Drzwi.GetComponent<Animator>();
 
                 if (Input.GetMouseButton(0) && (wylacznik == true))
                     {
