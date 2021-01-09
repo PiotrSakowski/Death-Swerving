@@ -2,34 +2,18 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class REspawn : MonoBehaviour
+
+[CreateAssetMenu(fileName = "Respawn", menuName = "Spawnmenu")]
+
+public class REspawn : ScriptableObject
 {
-    Vector3 StartPoint;
+    [SerializeField]
+    public AktywnyCheckpoint checkpoint;
+}
 
-
-    void Start()
-    {
-        StartPoint = transform.position;
-    }
-    void OnTriggerEnter(Collider hit)
-    {
-        if (hit.gameObject.CompareTag("respawnZone"))
-        {
-            // Debug.Log("zone");
-            transform.position = StartPoint;
-        }
-    }
-    //   void Update()
-    // {
-    //   if (gameObject.CompareTag("respawnZone"))
-    // {
-    //   Debug.Log("zone");
-    // transform.position = StartPoint;
-    //            Application.Quit();
-    //      }
-    //}
-
-
-
-
+[System.Serializable]
+public struct AktywnyCheckpoint
+{
+    public enum Checkpoint { Start, Poz1Klucz, Poz2Demon, Poz3Robak, Poz4Labirynt, Poz5Cerber, Poz6Powieszchnia, Poz0DevRoom }
+    public Checkpoint Pozycja;
 }

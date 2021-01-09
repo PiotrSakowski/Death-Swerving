@@ -9,7 +9,6 @@ public class GhostSpriteLoader : MonoBehaviour {
 
     private void Awake() {
         Instance = this;
-        //sprites = Resources.LoadAll<Sprite>("Ghost/");
 
     }
 

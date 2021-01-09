@@ -7,11 +7,16 @@ public class Poruszanie : MonoBehaviour
     public float thrustW = 1.0f;
     public Rigidbody rb;
     public float maxZmianaPredkosci = 10.0f;
+    static Transform StartPoint;
+    public REspawn RespawnSystem;
+
 
 
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+        StartPoint = Checkpoints.Instance.GetTransform(RespawnSystem.checkpoint.Pozycja);
+        transform.position = StartPoint.position;
     }
 
     void FixedUpdate()
@@ -29,4 +34,19 @@ public class Poruszanie : MonoBehaviour
         rb.AddForce(zmianaPredkosci, ForceMode.VelocityChange);
 
     }
+
+    void OnTriggerEnter(Collider hit)
+    {
+        if (hit.gameObject.CompareTag("respawnZone"))
+        {
+            transform.position = StartPoint.position;
+        }
+    }
 }
+
+    
+
+
+
+
+
