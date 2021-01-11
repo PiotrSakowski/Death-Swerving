@@ -23,6 +23,8 @@ public class WykonywaczDialogu : MonoBehaviour
 
     public Dialog dialogPodgladowy;
 
+    Rigidbody RigidPlayera;
+
 
     void Start()
     {
@@ -32,6 +34,8 @@ public class WykonywaczDialogu : MonoBehaviour
         LookP = Player.GetComponent<MouseLook>();
 
         dialog = dialogPodgladowy;
+
+        RigidPlayera = Player.GetComponent(typeof(Rigidbody)) as Rigidbody;
 
     }
 
@@ -56,6 +60,7 @@ public class WykonywaczDialogu : MonoBehaviour
                 PanelL.SetActive(true);
                 Celownik.SetActive(true);
                 Move.enabled = true;
+                RigidPlayera.drag = 1;
                 LookP.enabled = true;
                 LookC.enabled = true;
 
@@ -76,6 +81,8 @@ public class WykonywaczDialogu : MonoBehaviour
             PanelL.SetActive(false);
             Celownik.SetActive(false);
             Move.enabled = false;
+            //RigidPlayera.velocity = new Vector3(0, 0, 0);
+            RigidPlayera.drag = 10;
             LookP.enabled = false;
             LookC.enabled = false;
 

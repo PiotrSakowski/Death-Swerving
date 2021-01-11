@@ -6,7 +6,17 @@ ModelImporter:
   - first:
       74: -623603649343465320
     second: ogonekDUCHA
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material
+    second: {fileID: 2100000, guid: 5851902a9d6989d408b382bfe9485b24, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.001
+    second: {fileID: 2100000, guid: a6d503dd5778b4d4fb88085622899ff0, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0
