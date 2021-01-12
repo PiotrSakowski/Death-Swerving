@@ -8,9 +8,12 @@ public class DialogColiderInteraction : MonoBehaviour
     DialogNPC dialog;
     public GameObject PanelDialogowy;
 
+    public AudioSource DzwiekPostaci;
+
     void Awake()
     {
         dialog = GetComponent<DialogNPC>();
+        
         PanelDialogowy = GameObject.Find("Panel_Dialogowy1");
     }
     
@@ -24,6 +27,8 @@ public class DialogColiderInteraction : MonoBehaviour
         {
             WykonywaczDialogu.dialog = dialog.DialogPostaci;
             PanelDialogowy.SetActive(true);
+
+            DzwiekPostaci.Play();
 
         }
 

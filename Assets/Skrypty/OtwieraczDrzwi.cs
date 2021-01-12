@@ -12,6 +12,8 @@ public class OtwieraczDrzwi : MonoBehaviour
 
     private bool wylacznik;
 
+    public AudioSource DzwiekPostaci;
+
     private void Start()
     {
         wylacznik = true;
@@ -56,6 +58,8 @@ public class OtwieraczDrzwi : MonoBehaviour
                 {
 
                     D_Animator.SetTrigger("Odklucznik");
+
+                    DzwiekPostaci.Play();
 
                     WykonywaczDialogu.dialog = dialogDrzwiOtwartych;
 

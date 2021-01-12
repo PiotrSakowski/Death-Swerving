@@ -6,4 +6,5 @@ public class DialogNPC : MonoBehaviour
 {
     public Dialog DialogPostaci;
     
+    
 }

@@ -9,6 +9,8 @@ public class KluczInteraction : InteractionItem
     public GameObject Klucz;
     public GameObject KluczUI;
 
+    public AudioSource DzwiekPostaci;
+
     protected override void Awake()
     {
         base.Awake();
@@ -29,6 +31,7 @@ public class KluczInteraction : InteractionItem
             {
                 Destroy(Klucz);
                 KluczUI.SetActive(true);
+                DzwiekPostaci.Play();
             }
 
 
