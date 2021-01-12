@@ -53,7 +53,7 @@ public class OtwieraczCerbera : MonoBehaviour
                     if (Input.GetMouseButton(0) && (BoneUI.activeInHierarchy == true) && (wylacznik == true) && (PanelDialogowy.activeInHierarchy) && (WykonywaczDialogu.dialog == gameObject.GetComponent<DialogiCerbera>().Cerb0Item))
                     {
 
-                        D_Animator.SetTrigger("Odklucznik");
+                        //D_Animator.SetTrigger("Odklucznik");
 
                         WykonywaczDialogu.dialog = dialogDrzwiOtwartych;
 
