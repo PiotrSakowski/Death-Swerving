@@ -13,6 +13,17 @@ MonoBehaviour:
   m_Name: Demon3Item
   m_EditorClassIdentifier: 
   panels:
-  - text: A ten fajnie, no nie powiem, mozesz isc.
+  - text: "DEMON: A ten ciuszek nawet fajny, no nie powiem. Gdzie go znalaz\u0142e\u015B?"
+    state: 1
+    Npc: {fileID: 21300000, guid: 86ddbb393247c1841b6e120428cc9f62, type: 3}
+  - text: 'DEMON: To chyba moje. Oddawaj!'
+    state: 1
+    Npc: {fileID: 21300000, guid: 86ddbb393247c1841b6e120428cc9f62, type: 3}
+  - text: "DEMON: B\u0119d\u0119 w tym wygl\u0105da\u0142 zjawiskowo na przyj\u0119ciu
+      z Sokiem z \u017Cuka."
     state: 0
+    Npc: {fileID: 21300000, guid: a66ae1d445e1dbc418a9b91ca709494b, type: 3}
+  - text: "DEMON: Dobra przechod\u017A. Nie mam dla ciebie czasu. Musz\u0119 przemy\u015Ble\u0107
+      czy czarny pasuje do czarnego."
+    state: 1
     Npc: {fileID: 21300000, guid: a66ae1d445e1dbc418a9b91ca709494b, type: 3}

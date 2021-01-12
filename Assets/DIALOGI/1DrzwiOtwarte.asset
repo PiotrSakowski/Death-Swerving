@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: 1DrzwiOtwarte
   m_EditorClassIdentifier: 
   panels:
-  - text: "To s\u0105 pierwsze drzwi. Otwarles je!"
-    state: 0
+  - text: "Klucz, kt\xF3ry znalaz\u0142em pasuje te\u017C do tych drzwi!"
+    state: 4
     Npc: {fileID: 0}

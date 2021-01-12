@@ -13,6 +13,15 @@ MonoBehaviour:
   m_Name: Robak0Item
   m_EditorClassIdentifier: 
   panels:
-  - text: "Nie radze przechodzi\u0107, bo si\u0119 o mnie po\u015Bli\u017Aniesz."
-    state: 0
+  - text: 'SMAKOSZ: O! Kolejna biedna duszyczka.'
+    state: 9
+    Npc: {fileID: 21300000, guid: 426c37c858a19dc46b66deca0b960cdb, type: 3}
+  - text: "SMAKOSZ: Mam na my\u015Bli dos\u0142own\u0105 bied\u0119. Twoje kubki
+      smakowe s\u0105 ubogie jak ty.\nPewnie nigdy nawet nie skosztowa\u0142e\u015B
+      glinianej potrawki. Buhuhuhu..."
+    state: 9
     Npc: {fileID: 21300000, guid: 0e8efa7ddc9820b4e8ecea09c3ddd998, type: 3}
+  - text: "SMAKOSZ: Umowa jest nast\u0119puj\u0105ca. Przyniesiesz mi co\u015B dobrego,
+      a ja przymkn\u0119 oko na to, \u017Ce wejdziesz sobie za te drzwi."
+    state: 4
+    Npc: {fileID: 21300000, guid: 426c37c858a19dc46b66deca0b960cdb, type: 3}
