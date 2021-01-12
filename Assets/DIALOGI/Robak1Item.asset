@@ -13,6 +13,9 @@ MonoBehaviour:
   m_Name: Robak1Item
   m_EditorClassIdentifier: 
   panels:
-  - text: Pierwsze obrzydlistwo
-    state: 0
+  - text: "SMAKOSZ: Kolego! Ja nie tkn\u0119 tego!"
+    state: 4
+    Npc: {fileID: 21300000, guid: 426c37c858a19dc46b66deca0b960cdb, type: 3}
+  - text: "SMAKOSZ: M\xF3wi\u0142em, chc\u0119 co\u015B dobrego."
+    state: 9
     Npc: {fileID: 21300000, guid: 426c37c858a19dc46b66deca0b960cdb, type: 3}

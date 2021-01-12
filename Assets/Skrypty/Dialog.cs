@@ -15,7 +15,7 @@ public struct DialogPanel {
     [TextArea(15, 20)]
     public string text;
 
-    public enum GhostEmotions { angry, happy, sad, cuffed }
+    public enum GhostEmotions { angry,irritated, hungry ,love,natural,sad,suprised, cuffed, uncuffed, thinking , empty11}
     public GhostEmotions state;
     public Sprite Npc;
 }
