@@ -27,7 +27,7 @@ public class RandomRozmieszczacz : MonoBehaviour
         if (RandomIndex == 0)
             transform.position = pozycja1.transform.position;
 
-        Debug.Log("wylosowano" + RandomIndex);
+        //Debug.Log("wylosowano" + RandomIndex);
 
     }
     
