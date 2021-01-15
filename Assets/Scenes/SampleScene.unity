@@ -14531,7 +14531,7 @@ MonoBehaviour:
       enableFptlForForwardOpaque: 0
       enableBigTilePrepass: 0
       isFptlEnabled: 0
-  clearColorMode: 2
+  clearColorMode: 0
   backgroundColorHDR: {r: 0.025, g: 0.07, b: 0.19, a: 0}
   clearDepth: 1
   volumeLayerMask:
@@ -14944,7 +14944,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b14e7497a85c3b6489accb594360c4cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LiczbaPrzedmiotow: 7
+  LiczbaPrzedmiotow: 8
   przedmioty: []
 --- !u!1 &709042044
 GameObject:
