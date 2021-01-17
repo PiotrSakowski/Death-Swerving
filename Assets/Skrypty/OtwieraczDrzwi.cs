@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class OtwieraczDrzwi : MonoBehaviour
+public class OtwieraczDrzwi : InteractionItem
 {
     public Animator D_Animator;
     public GameObject KluczDoDrzwi;

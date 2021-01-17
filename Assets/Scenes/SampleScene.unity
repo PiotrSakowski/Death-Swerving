@@ -3767,7 +3767,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 3.6919502e-37, z: 0, w: 8e-44}
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 3.264e-42, w: 5.9e-44}
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
@@ -8388,8 +8388,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 2.1048553e-10, y: 4.484538e+30, z: 2.2687054e-10,
-    w: 1.846984e+25}
+  m_BoundingSphereOverride: {x: 3.264e-42, y: 1.01e-43, z: 2.3877232e-38, w: 0}
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
@@ -17832,7 +17831,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 2.4455e-41, y: 5.9e-44, z: 0, w: 0}
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 3.258e-42, w: 5.9e-44}
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
@@ -36780,7 +36779,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 0, z: 2.4625e-41, w: 1.01e-43}
+  m_BoundingSphereOverride: {x: 3.258e-42, y: 1.01e-43, z: 2.3877232e-38, w: 0}
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
@@ -58917,7 +58916,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 1e-45, y: 1.775e-42, z: 0, w: -0.000000003930044}
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 3.252e-42, w: 5.9e-44}
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
@@ -62785,7 +62784,6 @@ GameObject:
   - component: {fileID: 6754069020621202624}
   - component: {fileID: 9043387078591717485}
   - component: {fileID: 229251006885872397}
-  - component: {fileID: 229251006885872399}
   - component: {fileID: 229251006885872398}
   m_Layer: 10
   m_Name: drzwi
@@ -62819,6 +62817,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 923f7d1ae537be240b37ff13d858bc19, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  celownik: {fileID: 21300000, guid: 2ddd0bdc420544f4e91a470aaaabdc12, type: 3}
   D_Animator: {fileID: 1955608930}
   KluczDoDrzwi: {fileID: 1075565599}
   PanelDialogowy: {fileID: 197890518}
@@ -62827,20 +62826,6 @@ MonoBehaviour:
   dialogDrzwiZamknietych: {fileID: 11400000, guid: 71d92c42709371f4697ffc198009cab2,
     type: 2}
   DzwiekPostaci: {fileID: 1522136276}
---- !u!114 &229251006885872399
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 229251006885872396}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1b23128a8211dad4caaac413ccf05ce3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  celownik: {fileID: 21300000, guid: 2ddd0bdc420544f4e91a470aaaabdc12, type: 3}
-  PanelDialogowy: {fileID: 197890518}
 --- !u!4 &289399806518565588
 Transform:
   m_ObjectHideFlags: 0
