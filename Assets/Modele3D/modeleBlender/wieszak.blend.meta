@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: b0230b2a6c6abf243a350ab10bfad36d
+guid: 7d046dc2fd81664459ff666fc592c1b0
 ModelImporter:
   serializedVersion: 19301
   internalIDToNameTable: []
@@ -7,7 +7,7 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: No Name
+      name: drewno
     second: {fileID: 2100000, guid: bf7e5ae43cac76943b28bc58ddee7a5f, type: 2}
   materials:
     materialImportMode: 1
@@ -41,7 +41,7 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: 1
     meshCompression: 0
-    addColliders: 0
+    addColliders: 1
     useSRGBMaterialColor: 1
     sortHierarchyByName: 1
     importVisibility: 1
