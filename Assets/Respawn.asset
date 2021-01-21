@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Respawn
   m_EditorClassIdentifier: 
   checkpoint:
-    Pozycja: 0
+    Pozycja: 3

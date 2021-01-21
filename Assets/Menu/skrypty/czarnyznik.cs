@@ -13,7 +13,8 @@ public class czarnyznik : MonoBehaviour
     IEnumerator Czarnyznik()
     {
         yield return new WaitForSeconds(3f);
-        Destroy(gameObject);
+        //Destroy(gameObject);
+        gameObject.SetActive(false);
     }
 
 }
