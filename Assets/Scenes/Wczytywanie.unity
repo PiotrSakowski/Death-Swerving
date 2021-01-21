@@ -470,8 +470,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: graj
+      - m_Target: {fileID: 449979796}
+        m_MethodName: Poziom4
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -530,6 +530,7 @@ GameObject:
   - component: {fileID: 449979794}
   - component: {fileID: 449979793}
   - component: {fileID: 449979797}
+  - component: {fileID: 449979796}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -585,6 +586,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &449979796
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 449979792}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5b6ad0622ead514ca27a7d07f9f8989, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &449979797
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -680,8 +693,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: graj
+      - m_Target: {fileID: 449979796}
+        m_MethodName: Poziom1
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -885,8 +898,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: graj
+      - m_Target: {fileID: 449979796}
+        m_MethodName: Poziom5
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1160,8 +1173,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: graj
+      - m_Target: {fileID: 449979796}
+        m_MethodName: Poziom6
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1518,8 +1531,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: graj
+      - m_Target: {fileID: 449979796}
+        m_MethodName: Poziom2
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2560,8 +2573,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: graj
+      - m_Target: {fileID: 449979796}
+        m_MethodName: Poziom3
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
