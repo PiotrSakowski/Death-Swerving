@@ -21,6 +21,7 @@ public class wczytac : MonoBehaviour
     public void Nowa()
     {
 
+        PlayerPrefs.SetString("Startpoint", "Start");
         SceneManager.LoadScene("scenagry", LoadSceneMode.Single);
 
     }

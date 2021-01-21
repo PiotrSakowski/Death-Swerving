@@ -14,6 +14,6 @@ public class REspawn : ScriptableObject
 [System.Serializable]
 public struct AktywnyCheckpoint
 {
-    public enum Checkpoint { Start, Poz1Klucz, Poz2Demon, Poz3Robak, Poz4Labirynt, Poz5Cerber, Poz6Powieszchnia, Poz0DevRoom }
+    public enum Checkpoint { Start, Poz1Klucz, Poz2Demon, Poz3Robak, Poz4Labirynt, Poz5Cerber, Poz6Cmentarz, Poz0DevRoom }
     public Checkpoint Pozycja;
 }

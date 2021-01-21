@@ -9,14 +9,13 @@ public class Poruszanie : MonoBehaviour
     public float maxZmianaPredkosci = 10.0f;
     static Transform StartPoint;
     public REspawn RespawnSystem;
-
+    public bool NadpisanieSpawnu;
 
 
     void Start()
     {
         rb = GetComponent<Rigidbody>();
-        StartPoint = Checkpoints.Instance.GetTransform(RespawnSystem.checkpoint.Pozycja);
-        transform.position = StartPoint.position;
+        UstalStart();
     }
 
     void FixedUpdate()
@@ -41,6 +40,21 @@ public class Poruszanie : MonoBehaviour
         {
             transform.position = StartPoint.position;
         }
+    }
+
+    void UstalStart()
+    {
+        string Check = PlayerPrefs.GetString("Startpoint");
+        StartPoint = GameObject.Find(Check).transform;
+
+
+        if (NadpisanieSpawnu == true)
+        {
+            StartPoint = Checkpoints.Instance.GetTransform(RespawnSystem.checkpoint.Pozycja);
+        }
+
+
+        transform.position = StartPoint.position;
     }
 }
 
