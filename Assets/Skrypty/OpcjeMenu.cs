@@ -14,6 +14,11 @@ public class OpcjeMenu : MonoBehaviour
     private MouseLook LookP;
     public MouseLook LookC;
 
+    public void SetQuality (int qualityIndex)
+    {
+        QualitySettings.SetQualityLevel(qualityIndex);
+    }
+
 
     public void SetVolume (float volume)
     {
