@@ -23,13 +23,13 @@ public class DialogColiderInteraction : MonoBehaviour
     }
     void OnTriggerEnter(Collider collision)
     {
-        if ((collision.gameObject == ColiderUruchamiajacy))
+        if (collision.gameObject == ColiderUruchamiajacy)
         {
             WykonywaczDialogu.dialog = dialog.DialogPostaci;
             PanelDialogowy.SetActive(true);
 
             DzwiekPostaci.Play();
-
+            gameObject.SetActive(false);
         }
 
     }
