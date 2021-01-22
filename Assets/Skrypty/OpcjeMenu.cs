@@ -30,6 +30,7 @@ public class OpcjeMenu : MonoBehaviour
     {
         Move = Player.GetComponent<Poruszanie>();
         LookP = Player.GetComponent<MouseLook>();
+        Cursor.lockState = CursorLockMode.Locked;
     }
 
     public void Opcjeonoff()
