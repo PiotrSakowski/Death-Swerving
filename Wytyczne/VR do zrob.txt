@@ -10,3 +10,24 @@ UI
 
 Kolejne zajecia:
 podnoszenie i uzywanie przedmiotow
+
+
+Zakladane ubrania (lvl demon)
+dialogi, mechaniki cmentarne(siekiera, zly gosc...)
+winda do nieba/piekla
+roslinnosc, drzewa cmentarne
+model kaplicy
+ogrodzenie i brama cmentarna
+czulosc myszy w opcje
+modele grzybow, stalaktytow
+model wc do gory nogami
+alphy brudu na sciany
+jumpscare
+timer (na czas grac i sa utrudnienia typu trzeba uciekac, albo uwazac na przeszkody, ale to wiadomo jak starczy czasu)
+save system
+utrudnienia (wrogie dialogi/postacie np. toster razi pr¹dem, coœ goni, przeszkody zabijaj¹ce, spowalniajace), cofanie do u died)
+dziura zaczynajaca gre od nowa(za rogiem drzwi klatki schodowej)
+niebo
+tilt ducha zalezny od velocity colidera
+obszar treningowy/tutorial w menu
+Dialogi, interakcje z przedmiotami - ubraniami, potrawami
