@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class wczytac : MonoBehaviour
 {
-    public GameObject ramka;
+    public GameObject ramka, ustawienia;
 
     public void graj()
     {
@@ -40,7 +40,10 @@ public class wczytac : MonoBehaviour
 
     }
 
-
+    public void Opcje()
+    {
+        ustawienia.SetActive(true);
+    }
 }
 
 
