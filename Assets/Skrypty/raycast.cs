@@ -10,6 +10,8 @@ public class raycast : MonoBehaviour {
     public Image Celownik;
     public Sprite Aim, Grab, Talk;
 
+    public GameObject Zakonczenie;
+
     public LayerMask mask;
 
     void Update() {
@@ -44,9 +46,15 @@ public class raycast : MonoBehaviour {
                 K_Animator = Przedmiot.GetComponent<Animator>();
                 K_Animator.SetTrigger("klucztrigger");
             }
-            
 
+            if (hit.collider.gameObject.tag == "Dzwignia")
+            {
+                if (Input.GetMouseButton(0))
+                    Zakonczenie.SetActive(true);
             }
+
+
+        }
             else {
             Celownik.sprite = Aim;
         }

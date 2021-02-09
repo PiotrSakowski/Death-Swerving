@@ -28,9 +28,13 @@ public class DialogColiderInteraction : MonoBehaviour
             WykonywaczDialogu.dialog = dialog.DialogPostaci;
             PanelDialogowy.SetActive(true);
 
+            if (DzwiekPostaci != null) 
             DzwiekPostaci.Play();
+
             gameObject.SetActive(false);
         }
+
+
 
     }
 

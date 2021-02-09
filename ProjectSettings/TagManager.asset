@@ -9,6 +9,7 @@ TagManager:
   - Drzwi
   - IkonaPrzedmiotu
   - respawnZone
+  - Dzwignia
   layers:
   - Default
   - TransparentFX
