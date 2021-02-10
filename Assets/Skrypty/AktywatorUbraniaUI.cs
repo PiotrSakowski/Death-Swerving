@@ -5,6 +5,7 @@ using UnityEngine;
 public class AktywatorUbraniaUI : MonoBehaviour
 {
     public GameObject Ubranie1, Ubranie2, Ubranie3;
+    public GameObject DialogZebrania2, DialogZebrania3;
     public GameObject Ubranie1UI, Ubranie2UI, Ubranie3UI;
     public GameObject PanelDialogowy, DrzwiDemona;
 
@@ -42,6 +43,7 @@ public class AktywatorUbraniaUI : MonoBehaviour
         if ((Ubranie2 != null) && (pokazane1 == true) && (PanelDialogowy.activeInHierarchy) && (WykonywaczDialogu.dialog == gameObject.GetComponent<DialogiDemona>().Dialog1Item))
         {
             Ubranie2.layer = LayerMask.NameToLayer("InteractionLayer");
+            DialogZebrania2.layer = LayerMask.NameToLayer("InteractionLayer");
         }
 
         if ((Ubranie2 == null) && (off2 == true))
@@ -53,6 +55,8 @@ public class AktywatorUbraniaUI : MonoBehaviour
         if ((Ubranie3 != null) && (pokazane2 == true) && (PanelDialogowy.activeInHierarchy) && (WykonywaczDialogu.dialog == gameObject.GetComponent<DialogiDemona>().Dialog2Item))
         {
             Ubranie3.layer = LayerMask.NameToLayer("InteractionLayer");
+            if(DialogZebrania2 == null)
+            DialogZebrania3.layer = LayerMask.NameToLayer("InteractionLayer");
         }
 
         if ((Ubranie3 == null) && (off3 == true))

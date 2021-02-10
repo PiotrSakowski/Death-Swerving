@@ -7,6 +7,7 @@ public class DialogInteractionItem : InteractionItem
 {
     DialogNPC dialog;
     public GameObject PanelDialogowy;
+    public bool jednorazowy;
 
     protected override void Awake()
     {
@@ -22,6 +23,10 @@ public class DialogInteractionItem : InteractionItem
         {
                         WykonywaczDialogu.dialog = dialog.DialogPostaci;
                         PanelDialogowy.SetActive(true);
+            if(jednorazowy == true)
+            {
+                gameObject.SetActive(false);
+            }
                     }
 
         }

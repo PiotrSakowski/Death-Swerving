@@ -9,6 +9,11 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: dach
     second: {fileID: 2100000, guid: 11d4fca09bb031c4a9f0fbc04ff073a3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: derwno
+    second: {fileID: 2100000, guid: ca460892cbca93e48ac697f22d81ecbc, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0

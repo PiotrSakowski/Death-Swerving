@@ -13,6 +13,12 @@ MonoBehaviour:
   m_Name: Zly1Item
   m_EditorClassIdentifier: 
   panels:
-  - text: jest zabijany
+  - text: Jeden mocny zamach... I...
     state: 0
-    Npc: {fileID: 0}
+    Npc: {fileID: 21300000, guid: d684adc2d53c77f4289a5ff9bed24a33, type: 3}
+  - text: "Ju\u017C po tobie!"
+    state: 0
+    Npc: {fileID: 21300000, guid: c61493a4c01913b4abda237a79e044e2, type: 3}
+  - text: ...
+    state: 0
+    Npc: {fileID: 21300000, guid: 6e1162fc0710ecb48aaa50952cc2f9de, type: 3}
