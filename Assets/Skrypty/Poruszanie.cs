@@ -11,6 +11,8 @@ public class Poruszanie : MonoBehaviour
     public REspawn RespawnSystem;
     public bool NadpisanieSpawnu;
 
+    public Transform StartowyCheckpoint;
+
 
     void Start()
     {
@@ -38,7 +40,8 @@ public class Poruszanie : MonoBehaviour
     {
         if (hit.gameObject.CompareTag("respawnZone"))
         {
-            transform.position = StartPoint.position;
+            //transform.position = StartPoint.position;
+            transform.position = StartowyCheckpoint.position;
         }
     }
 
