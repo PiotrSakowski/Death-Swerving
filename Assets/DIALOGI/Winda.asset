@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Winda
   m_EditorClassIdentifier: 
   panels:
-  - text: "Wygl\u0105da na to \u017Ce ta winda jedzie w g\xF3r\u0119."
+  - text: "Wygl\u0105da na to, \u017Ce ta winda jedzie w g\xF3r\u0119."
     state: 9
     Npc: {fileID: 0}
   - text: "Mam nadziej\u0119, \u017Ce to si\u0119 nie zmieni."

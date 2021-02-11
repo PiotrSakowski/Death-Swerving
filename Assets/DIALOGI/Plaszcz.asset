@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Plaszcz
   m_EditorClassIdentifier: 
   panels:
-  - text: "Mmm skurzany p\u0142aszczyk. Jak si\u0119 st\u0105d wydostan\u0119, to
-      mo\u017Ce sprzedam go za dobr\u0105 cen\u0119."
+  - text: "Mmm sk\xF3rzany p\u0142aszczyk. Jak si\u0119 st\u0105d wydostan\u0119,
+      to mo\u017Ce sprzedam go za dobr\u0105 cen\u0119."
     state: 4
     Npc: {fileID: 0}
